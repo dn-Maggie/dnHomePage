@@ -1,6 +1,26 @@
 // JavaScript Document
 $(document).ready(function(e) {
-/*==============================优秀学员展示轮播图jS========================*/
+/*顶部菜单栏hover效果js开始*/
+$(".tm_li").hover(function () {
+    $(this).css("background-color","#090a3a");
+    $(this).find("span").css("color","white");
+    $(".mask_tm").css("display", "block");
+    var _for = $(this).attr('for');
+    $('.mask_tm ' + _for).show().siblings().hide();
+},function () {
+    $(".mask_tm").css("display", "none");
+    $(this).css("background-color","white");
+    $(this).find("span").css("color","#3c3c3c");
+});
+$(".mask_tm").hover(function () {
+    $(this).css("display","block")
+},function () {
+    $(this).css("display","none")
+});
+
+$(".o_e_img_box-list").dnenvironment();
+/*顶部菜单栏hover效果js结束*/
+/*优秀学员展示轮播图jS开始*/
      var _index=0;
      $(".wrap_scroll .arrow_left").on("click",function(){
         _index--;
@@ -27,9 +47,9 @@ $(document).ready(function(e) {
         $(".scroll ul").animate({"left":-500*index+"px"});
         $(".wrap_scroll .tab .tab_list").eq(index).addClass("active").siblings().removeClass("active");
     }
-/*==============================优秀学员展示轮播图jS结束========================*/
+/*优秀学员展示轮播图jS结束*/
 
-/*==============================导师团队展示轮播图jS========================*/
+/*导师团队展示轮播图jS开始*/
 var _tutorIndex=0;
 function tutorSlide(index){
     $(".mainlist").animate({"left":-index*302+"px"});
@@ -55,9 +75,9 @@ $(".og_next").on("click",function(){
     console.log(_tutorIndex);
     console.log($(".mainlist").width());
 })
-/*==============================导师团队展示轮播图jS结束========================*/
+/*导师团队展示轮播图jS结束*/
 
-/*==============================学员心声jS========================*/
+/*学员心声jS*/
 var timer;
 autoPlay();
 $('.student_voice_item').hover(function(){
