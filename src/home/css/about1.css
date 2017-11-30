@@ -1,0 +1,294 @@
+.bbox {
+	width: 1024px;
+	overflow: hidden;
+	margin-top: 30px;
+}
+
+.nav {
+	float: left;
+	width: 220px;
+	background: #FFFFFF;
+	border: 1px solid #D8D8D8;
+}
+
+.text {
+	float: right;
+	width: 784px;
+	border: 1px solid #D8D8D8;
+	background-color: white;
+}
+
+.bbox .nav li {
+	position: relative;
+	border-bottom: 1px solid #D8D8D8;
+	font-size: 14px;
+	padding-left: 18px;
+	line-height: 45px;
+	color: #C0C0C0;
+	
+}
+.bbox .nav li a {
+	color: #C0C0C0;
+	display: block;
+}
+.bbox .nav li a:hover {
+	color: #090A3A;
+}
+.bbox .nav li:before {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	content: '';
+	height: 100%;
+	background: #090A3A;
+	display: block;
+	width: 0px;
+	transition: width .5s ease-in-out; 
+	-webkit-transition: width .5s ease-in-out; 
+}
+.bbox .nav li.active:before {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	content: '';
+	width: 4px;
+	height: 100%;
+	background: #090A3A;
+	display: block;
+}
+.bbox .nav li:hover:before{
+	width: 4px;
+}
+
+.bbox .nav li:last-child {
+	border: none;
+}
+.text {
+	min-height: 670px;
+}
+.text h1 {
+	padding-left: 40px;
+	line-height: 45px;
+	border-bottom: 1px solid #D8D8D8;
+	color: #090A3A;
+	margin-bottom: 20px;
+}
+/*
+.text h3 {
+	color: #262650;
+	font-size: 16px;
+	padding-left: 60px;
+	line-height: 45px;
+}*/
+
+.text p {
+	color: #838383;
+	font-size: 14px;
+}
+
+.text ul .jianjie p{ 
+	margin-left: 60px;
+	width: 660px;
+	margin-top: 10px;
+}
+.text ul .jianjie h3 {
+	margin-left: 60px;
+	
+	margin-top: 20px;
+}
+.text ul .lianxi p{ 
+	margin-left: 60px;
+}
+.text ul .lianxi h3 {
+	margin-top: 20px;
+	margin-left: 60px;
+}
+.text ul .lianxi p {
+	margin-top: 10px;
+}
+.text ul .jiaru h2 {
+	text-align: center;
+	font-size: 24px;
+}
+.text ul li .wx1 {
+	margin-left: 60px;
+}
+#btn {
+	border-left: 2px solid #090A3A;
+	color: #090A3A;
+}
+.zp {
+	width: 312px;
+	height: 300px;
+	border: 1px solid #848484;
+	float: left;
+	margin-bottom: 20px;
+	position: relative;
+}
+.bj70{ margin-left: 70px;}
+.bj20{ margin-left: 20px;}
+.a1{position: absolute;
+	right:-350px;
+	bottom: 20px;
+}
+.text ul li:nth-child(3) h2{text-align: center; margin-top: 20px;}
+.text ul li .zz1{ 
+	text-align: center; 
+	margin-top: 5px;
+	font-size: 10px;
+} 
+.text ul li .fl1{
+	width: 240px;
+	margin: 27px auto 50px auto;
+}
+.text ul li .fl1 span {
+	line-height: 30px;
+	width: 90px;
+	margin-left: 20px;
+	display: block;
+	float: left;
+}
+.text ul li .fl1 span label{
+	display: inline-block;
+	border-radius: 50%;
+	margin-right: 10px;
+	width: 8px;
+	height: 8px;
+	background: #8a8a8a;
+}
+.text ul li .hr1 p{ margin-top: 10px; padding-left: 70px;}
+.text ul li .hs1{color: indianred; font-size: 16px;}
+.text ul li .yq1 a {
+	padding-left: 40px; 
+	line-height: 60px;
+	color: #090A3A;
+	font-size: 18px;
+}
+.text ul li .yq1 a:hover {
+	text-decoration: underline;
+}
+.text ul li .xy1{ 
+	width: 360px;
+	height: 140px; 
+	border: 1px solid #C0C0C0; 
+	margin-top: 20px; 
+	margin-left: 20px;
+	float: left; 
+	overflow: hidden;
+}
+.text ul li .xy1 h6 {
+	font-size: 16px;
+}
+.text ul li .xy1 img{ 
+	display: block; 
+	margin: 0 10px; 
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+}
+.text ul li .xy1 div{
+	float: left; 
+	font-size: 14px;
+	line-height: 24px; 
+	margin-top: 10px;
+}
+.text ul li .xy1 div:last-child {
+	width: 200px;
+}
+.text ul li .xy1 div:last-child p{
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
+	
+}
+.text ul li .xy1:nth-last-child(1){
+	margin-bottom: 40px;
+}
+.text ul li .qsq1{
+	background:url(../img/Question_03.jpg) no-repeat left;
+}
+.text ul li .hd1{
+	background:url(../img/Question_06.jpg) no-repeat left;
+}
+
+
+.jobs {
+	width: 644px;
+	margin: 0 auto;
+}
+.jobs ul {
+	margin-left: -20px;
+}
+.jobs li {
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	padding: 20px;
+	margin-left: 20px;
+	width: 312px;
+	height: 300px;
+	float: left;
+	border: 1px solid #e9e9e9;
+}
+.jobs li h3 {
+	font-size: 14px;
+	color: #090A3A;
+	margin-bottom: 20px;
+}
+.jobs li>div {
+	display: block;
+	height: 100%;
+	position: relative;
+}
+.jobs li div div:first-of-type {
+	margin-top: 10px;
+}
+.jobs li div div:nth-of-type(2) {
+	margin-top: 10px;
+}
+.jobs li div p {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	color: #212121;
+	font-size: 18px;
+	
+}
+.jobs li div p label {
+	font-size: 12px;
+}
+.jobs li div p span {
+	color: #f87373;
+}
+
+
+.answer {
+	width: 664px;
+	margin: 0 auto;
+	font-size: 14px;
+}
+.answer span {
+	float: left;
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	color: white;
+	background: #090A3A;
+	margin-right: 10px;
+}
+
+.answer h6 {
+	margin-top: 20px;
+	color: #090A3A;
+}
+.answer p {
+	vertical-align: top;
+	margin-top: 10px;
+}
+.answer p label {
+	width: 624px;
+	display: inline-block;
+}

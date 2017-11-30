@@ -1,0 +1,27 @@
+
+.main{
+    width: 760px;
+    height: 750px;
+    margin: 50px auto 50px auto;
+}
+.headings{
+    width: 760px;
+    height: 30px;
+    margin:0 auto;
+    text-align: center;
+}
+.headings span{
+    font-size: 24px;
+}
+.first_paragraph{
+    margin-top: 50px;
+    /*text-indent:38px;*/
+}
+.body_text{
+    font-size: 18px;
+    letter-spacing:1px;
+    text-align: left;
+    display:block;
+    line-height: 28px;
+    color:#919191;
+}

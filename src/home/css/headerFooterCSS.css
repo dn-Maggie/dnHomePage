@@ -1,0 +1,231 @@
+﻿html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+	font-weight: inherit;
+	font-style: inherit;
+	font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
+	vertical-align: baseline;
+}
+a{text-decoration:none}
+
+/*headerCSS开始*/
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{height:1%;}
+.header_div{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    /*border: 1px solid #dad8d9;*/      
+    height: 70px;
+	background-color: #fafafa;
+}
+.header .cc {
+    width: 1024px;
+    margin: 0 auto;
+    height: 68px;
+    line-height: 68px;
+}
+.header .logo {
+    display: inline-block;
+    height: 38px;
+    margin-top: 11px;
+    float: left;
+}
+.header  a{
+	text-decoration: none;
+}
+.header ul {
+    margin-left: 25px;
+    float: left;
+    position: relative;
+}
+.header ul li {
+    float: left;
+}
+.header ul li a {
+    display: inline-block;
+    padding: 0 15px;
+    color: #565656;
+    font-weight: 500;
+    font-size: 18px;
+}
+.header ul li.fix-sel a {
+    color: #090a3a;
+}
+.header ul li.fix-move {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    background-color: #090A3A;
+}
+.header ul li a:hover {
+    color: #090a3a;
+    font-weight: bold;
+    text-decoration: none;
+}
+.header .tencent {
+    line-height: 68px;
+    float: right;
+    color: #565656;
+    font-size: 16px;
+}
+.header .tencent i{
+    font-size: 26px;
+    line-height: 68px;
+    margin-right: 5px;
+    color: #197dd2;
+}
+.header .tencent p{
+    transition: color .3s ease-in-out;
+    -webkit-transition: color .3s ease-in-out;
+    float: right;
+}
+.header .tencent img{
+    width: 30px;
+}
+.header .tencent p:hover {
+    color: #090a3a;
+}
+@font-face {
+    font-family: 'iconfont';  /* project id 312381 */
+    src: url('https://at.alicdn.com/t/font_b6e8juqy624eu3di.eot');
+    src: url('https://at.alicdn.com/t/font_b6e8juqy624eu3di.eot?#iefix') format('embedded-opentype'),
+    url('https://at.alicdn.com/t/font_b6e8juqy624eu3di.woff') format('woff'),
+    url('https://at.alicdn.com/t/font_b6e8juqy624eu3di.ttf') format('truetype'),
+    url('https://at.alicdn.com/t/font_b6e8juqy624eu3di.svg#iconfont') format('svg');
+}
+
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+/*headerCSS结束*/
+
+/*footerCSS开始*/
+.footer_div{
+    width:1024px;
+    margin:50px auto auto auto;
+    margin-bottom:50px;
+	background-color: #fafafa;
+}
+footer .dongnao_profile {
+    float: left;
+    width: 270px;
+    margin-right: 40px;
+}
+footer .dongnao_profile p:last-child {
+    text-indent: 2rem;
+}
+footer .dongnao_profile p{
+    margin-top:10px;
+    margin-bottom:10px;
+    font-size:12px;
+    text-align:left;
+    color: #848484;
+}
+footer .dongnao_profile span{
+    font-size:12px;
+    line-height:18px;
+    text-align:left;
+    display:inline-block;
+    color: #848484;
+}
+footer .dongnao_profile img{
+    float:left;
+}
+.footer_list li:nth-child(1),.footer_list li:nth-child(2){
+    float: left;
+    margin-right: 50px;
+}
+.footer_list li:nth-child(3){
+    margin-right: 28px;
+}
+.footer_list h5{
+    font-size:14px;
+    color:#848484;
+    font-weight:bold;
+    margin-bottom: 24px;
+}
+.footer_list ul li p{
+    margin-top: 5px;
+}
+.footer_list ul li a{
+    color: #848484;
+    font-size:12px;
+}
+footer .help_phone p{
+    margin-bottom:10px;
+    color: #848484;
+}
+footer .help_phone{
+    float:left;
+    text-align:left;
+    color: #848484;
+}
+footer #time{
+    font-size:12px;
+}
+footer #server_tel{
+    font-size:12px;
+    margin-bottom:10px;
+}
+footer .help_phone h2{
+    margin-bottom:8px;
+    color: #848484;
+}
+
+.footer_list li:nth-child(4) div{
+    width: 183px;
+    border-left:1px solid #848484;
+}
+
+footer .wechat_img pre,footer .wb_img pre{
+    font-size:12px;
+}
+
+footer .copyright {
+    text-align: center;
+}
+footer .copyright img{
+    padding: 0 10px;
+}
+
+footer .copyright p+a{
+	display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size:12px;
+    color: #848484!important;
+    cursor: pointer;
+}
+footer .copyright p+a:hover{
+	text-decoration: underline!important;
+}
+footer .copyright p:first-child {
+    margin-top: 20px;
+    font-size:12px;
+    color: #848484;
+}
+/*footerCSS结束*/
