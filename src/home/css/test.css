@@ -818,9 +818,9 @@ body,ul,li{
     box-sizing: border-box;
 }
 .o_e_img_box{
-    width: 1980px;
+    width: 1180px;
     height: 261px;
-    margin: 17px auto 0;
+    margin: 17px 10px;
 }
 .o_e_img_box ul li{
     float: left;
