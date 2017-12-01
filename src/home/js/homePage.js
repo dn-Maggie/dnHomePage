@@ -17,8 +17,11 @@ $(".mask_tm").hover(function () {
 },function () {
     $(this).css("display","none")
 });
+/*讲师团队图片滚动*/
+$(".picbox").kxbdMarquee();
 /*底部办公环境图片滚动*/
 $(".o_e_img_box").kxbdMarquee();
+
 
 /*顶部菜单栏hover效果js结束*/
 /*优秀学员展示轮播图jS开始*/
@@ -50,32 +53,32 @@ $(".o_e_img_box").kxbdMarquee();
     }
 /*优秀学员展示轮播图jS结束*/
 
-/*导师团队展示轮播图jS开始*/
-var _tutorIndex=0;
+/*导师团队展示轮播图jS开始，按钮切换模式*/
+/*var _tutorIndex=0;
 function tutorSlide(index){
-    $(".mainlist").animate({"left":-index*302+"px"});
+    $(".mainlist").animate({"left":-index*242+"px"});/!*-index*（li的宽度+右边距）*!/
 }
 
-$(".mainlist").css("width",402*28+"px");
+$(".mainlist").css("width",242*27+"px");/!*li的数量*!/
 $(".og_prev").on("click",function(){
     _tutorIndex--;
     if(_tutorIndex<0){
-        _tutorIndex=23;
-        $(".mainlist").css("left",-24*302+"px");
+        _tutorIndex=22;
+        $(".mainlist").css("left",-23*242+"px");
     }
     tutorSlide(_tutorIndex);
 })
 
 $(".og_next").on("click",function(){
     _tutorIndex++;
-    if(_tutorIndex>24){
+    if(_tutorIndex>23){
         _tutorIndex=1;
         $(".mainlist").css("left",0+"px");
     }
     tutorSlide(_tutorIndex);
     console.log(_tutorIndex);
     console.log($(".mainlist").width());
-})
+})*!/*/
 /*导师团队展示轮播图jS结束*/
 
 /*学员心声jS*/
@@ -86,7 +89,7 @@ $('.student_voice_item').hover(function(){
 });
 $('.student_voice_item').mouseout(function(){
     autoPlay();
-})
+});
 function autoPlay() {
     clearInterval(timer);
 //设置定时器实现不停上移
@@ -116,6 +119,7 @@ function autoPlay() {
         $(".hiden_img").hide()
     });
 });
+/*滚动播放方法*/
 $.fn.kxbdMarquee=function(options){
     var opts=$.extend({},$.fn.kxbdMarquee.defaults, options);
 
