@@ -35,10 +35,10 @@ a{text-decoration:none}
 .header {
     /*border: 1px solid #dad8d9;*/      
     height: 70px;
-	background-color: #fafafa;
+	background-color: #ebebeb;
 }
 .header .cc {
-    width: 1024px;
+    width: 1200px;
     margin: 0 auto;
     height: 68px;
     line-height: 68px;
@@ -128,7 +128,7 @@ a{text-decoration:none}
     width:1024px;
     margin:50px auto auto auto;
     margin-bottom:50px;
-	background-color: #fafafa;
+	background-color: #ebebeb;
 }
 footer .dongnao_profile {
     float: left;

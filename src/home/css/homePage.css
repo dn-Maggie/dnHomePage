@@ -1,24 +1,14 @@
-.row{
-padding:0px;
-margin:0px;
-max-width:1900px;
-}
-.paddingZero{
-    padding:0px;
-}
-.container-fluid{
-    padding:0px;
-}
 body{
     text-align:center;
     min-width:1200px;
     /*禁止选中*/
-	-webkit-user-select:none; 
-	-moz-user-select:none; 
-	-ms-user-select:none; 
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
 	user-select:none;
 	/*鼠标样式*/
 	cursor: default;
+    background-color: #ebebeb;
 }
 ul li{
     float:left;
@@ -31,14 +21,11 @@ img{
 a{
     text-decoration:none;
 }
-div{
-    overflow: hidden;
+body,ul,li{
+    padding:0; margin:0;
 }
 .clear {
     clear: both;
-}
-body,ul,li{
-    padding:0; margin:0;
 }
 /*顶部菜单和轮播图*/
 .top_menu_carousel{
@@ -49,84 +36,84 @@ body,ul,li{
 .top_menu{
     width: 250px;
     height: 500px;
-    margin-right: 10px;
     border-radius: 10px;
-    background-color: #01c9b4;
+    border: 1px solid #d7d7d7;
+    background-color: white;
     float: left;
 }
-/*顶部轮播图CSS*/
+.top_menu .tm_li{
+    margin-top: 19px;
+    width: 248px;
+    height: 40px;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+.top_menu .tm_li .tm_le{
+    line-height:40px;font-size:18px;color: #3c3c3c; margin-left:30px;float: left;
+}
+.top_menu .tm_li .tm_ri{
+    line-height:40px;font-size:18px;color: #3c3c3c;margin-right:35px;float: right;
+}
+.mask_tm{
+    width: 174px;
+    height: 501px;
+    margin-left:250px;
+    position: absolute;
+    top: 73px;
+    border-radius: 10px;
+    border: 1px solid #d7d7d7;
+    background-color: #fff;
+    z-index: 1;
+}
+/*顶部轮播图CSS开始*/
 .top_carousel{
     width: 940px;
     height: 500px;
     float: right;
     border-radius: 10px;
+    overflow: hidden;
 }
-.carousel{
-    width: 100%;
-    height: 100%;
+.carousel-inner{
+    border-radius: 10px;
 }
 .carousel-item{
     width: 940px;
     height: 500px;
     overflow: hidden;
-    position: relative;
     border-radius: 10px;
 }
-.carousel-item img{
-    width: 940px;
-    height: 500px;
-}
-.carousel-control-prev div{
-    width:30px;
-    height:78px;
-    background-color:black;
-    opacity:0.3;
-    border-radius:4px;
-}
-.carousel-control-prev div span{
-    margin-top:30px;
-    margin-left:5px;
-}
-.carousel-control-next div{
-    width:30px;
-    height:78px;
-    background-color:black;
-    opacity:0.3;
-    border-radius:4px;
-}
-.carousel-control-next div span{
-    margin-top:30px;
-    margin-left:5px;
-}
 /*顶部轮播图CSS结束*/
-/*动脑课程服务特点*/
+/*动脑课程服务特点CSS开始*/
 .bl_gr_re{
     margin:20px auto auto auto;
     text-align:center;
     width:1200px;
-    height: 155px;
+    height: 175px;
 }
 .bl_gr_re ul li:nth-child(1){
-    width:384px;
+    width:374px;
     height:148px;
     background-color:#236efb;
     border-radius:10px;
-    margin-right:24px;
+    margin:20px 24px 0px 15px;
     display: inline-block;
 }
 .bl_gr_re ul li:nth-child(2){
-    width:384px;
+    width:374px;
     height:148px;
     background-color:#01c9b4;
     border-radius:10px;
-    margin-right:24px;
+    margin:24px 20px 0 0;
     display: inline-block;
 }
 .bl_gr_re ul li:nth-child(3){
-    width:384px;
+    width:374px;
     height:148px;
     background-color:#f45750;
     border-radius:10px;
+    margin: 20px 15px 0px 0px;
     display: inline-block;
 }
 .bl_gr_re .bgr_img_div{
@@ -140,7 +127,7 @@ body,ul,li{
     margin-right:22px;
 }
 .bl_gr_re .bgr_words_div{
-    width:237px;
+    width:227px;
     height:100%;
     float:right;
 }
@@ -157,8 +144,21 @@ body,ul,li{
     padding-top:15px;
     text-align:left;
 }
+.bl_gr_re ul li{
+    transition-duration: 0.7s;
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+.bl_gr_re ul li:hover{
+    margin-top: 10px;
+    -webkit-box-shadow: 0 0 10px #000000;
+    -moz-box-shadow: 0 0 10px #000000;
+    -o-box-shadow: 0 0 10px #000000;
+    box-shadow: 0 0 10px #000000;
+}
 /*动脑课程服务特点CSS结束*/
-/*媒体采访和腾讯课堂保障*/
+/*媒体采访和腾讯课堂保障CSS开始*/
 .tencent_interview_certification{
     width: 1200px;
     height: 455px;
@@ -281,7 +281,7 @@ body,ul,li{
     line-height: 25px;
 }
 /*媒体采访和腾讯课堂保障CSS结束*/
-/*课程介绍CSS*/
+/*课程介绍CSS开始*/
 .course_div{
     width:1201px;
     margin:62px auto auto auto;
@@ -310,7 +310,6 @@ body,ul,li{
     border:1px solid #cacaca;
     position: relative;
 }
-
 .course_div .div_one{
     width:1201px;
     height:324px;
@@ -361,8 +360,6 @@ body,ul,li{
     background: #000000;
     opacity: 0;
 }
-/*课程介绍CSS结束*/
-/*0基础部分*/
 .mask_li:hover  .mask_div {
     opacity: 0.7;
 }
@@ -405,6 +402,8 @@ body,ul,li{
     color:#eee;
     line-height:30px;
 }
+/*课程介绍CSS结束*/
+/*0基础文字部分CSS开始*/
 .middle_blue_img{
     height:645px;
     width:1200px;
@@ -432,7 +431,6 @@ body,ul,li{
     line-height:100%;
     font-weight:bold;
 }
-
 .blu_bc_middle{
     margin:31px auto auto auto;
     width:1200px;
@@ -442,11 +440,8 @@ body,ul,li{
     overflow: hidden;
     border: 1px solid #d7d7d7;
 }
-.blu_bc_middle img{
-
-}
-
-/*导师团队轮播图*/
+/*0基础文字部分CSS结束*/
+/*导师团队轮播图CSS开始*/
 .tutors_team_carousel{
     margin:50px auto auto auto;
     height:512px;
@@ -478,34 +473,32 @@ body,ul,li{
 }
 .tutors_team_carousel .picbox{
     width:1200px;
-    height:512px;
+    height:409px;
     overflow:hidden;
     position:relative;
 }
 .tutors_team_carousel .piclist{
-    height:512px;
+    height:409px;
     position:absolute;
     left:0px;
     top:0px;
 }
 .tutors_team_carousel .piclist li{
-    background:#eee;
-    margin-right:8px;
-    padding:0px;
+    background-color: #345be1;
+    margin:0 5px;
     float:left;
 }
-.tutors_team_carousel .swaplist{
-    position:absolute;
-    left:-3000px;
-    top:0px;
+.tutors_team_carousel .piclist #picbox_img{
+    width:235px;
+    height:252px;
 }
-.tutors_team_carousel .og_prev,.og_next{
+/*.tutors_team_carousel .og_prev,.og_next{
     width:30px;
     height:50px;
     background:url(../img/homePage/icon.png) no-repeat;
     background:url(../img/homePage/icon_ie6.png) no-repeat\9;
     position:absolute;
-    top:236px;
+    top:180px;
     z-index:99;
     cursor:pointer;
     filter:alpha(opacity=70);
@@ -518,39 +511,37 @@ body,ul,li{
 .tutors_team_carousel .og_next{
     background-position:0 0;
     right:4px;
-}
+}*/
 .tutors_team_carousel .introduce_div{
-    width: 234px;
-    height: 200px;
-    margin:0 auto;
+    width: 215px;
+    height: 157px;
+    margin:0 10px;
     text-align: center;
-    padding-top: 16px
+    padding-top: 8px
 }
 .tutors_team_carousel .name_position_span{
     border-bottom: 1px solid #eeeeee;
     padding-bottom: 10px
 }
 .tutors_team_carousel .name_span{
-    font-size: 30px;
+    font-size: 23px;
     font-weight: bold;
     color: #eeeeee
 }
 .tutors_team_carousel .position_span{
-    font-size: 16px;
+    font-size: 11px;
     color: #eeeeee
 }
 .tutors_team_carousel .introduce_div p{
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 12px;
+    line-height: 20px;
     color: #eeeeee;
     text-indent:2em;
     text-align: left;
     margin-top:12px;
 }
-.tutors_team_carousel .piclist li{
-    background-color: #345be1
-}
 /*导师团队轮播图CSS结束*/
+/*学员展示轮播图CSS开始*/
 .student_show{
     margin-top:50px;
     height:589px;
@@ -578,9 +569,8 @@ body,ul,li{
     height:542px;
     width:100%;
     text-align:center;
-    background:url('../img/homePage/bg2.jpg');
+    background:url('../img/homePage/bbg2.jpg');
 }
-
 .wrap_scroll{
     width:1200px;
     height:542px;
@@ -610,7 +600,7 @@ body,ul,li{
     cursor: pointer;
     left:366px;
 }
- .wrap_scroll .arrow .arrow_right{
+.wrap_scroll .arrow .arrow_right{
     width: 20px;
     height: 20px;
     border-top: 1px solid #000;
@@ -689,7 +679,120 @@ body,ul,li{
 .wrap_scroll .tab .active{
     background:#ec6c00;
 }
-/*==============================学员心声CSS========================*/
+/*学员展示轮播图CSS结束*/
+/*技术交流与学院动态CSS开始*/
+.tech_comut_dn_dynam{
+    width: 1200px;
+    height: 370px;
+    margin: 50px auto auto auto;
+}
+.t_c_d_d_left{
+    width: 741px;
+    height: 370px;
+    margin-right: 11px;
+    float: left;
+}
+.t_c_d_d_right{
+    width: 448px;
+    height: 370px;
+    float: right;
+}
+.t_c_d_d_left .headings{
+    height: 30px;
+    width: 741px;
+    text-align: left;
+}
+.t_c_d_d_left .headings #one{
+    font-family: "Microsoft YaHei" ;
+    font-size: 25px;
+    color: #666666;
+    line-height: 100%;
+}
+.t_c_d_d_left .headings #two{
+    font-family: "Microsoft YaHei" ;
+    font-size: 15px;
+    color: #666666;
+}
+.t_c_d_d_right .headings{
+    height: 30px;
+    width: 448px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.t_c_d_d_right .headings #one{
+    font-family: "Microsoft YaHei" ;
+    font-size: 25px;
+    color: #666666;
+    line-height: 100%;
+}
+.t_c_d_d_right .headings #two{
+    font-family: "Microsoft YaHei" ;
+    font-size: 15px;
+    color: #666666;
+}
+.technique_articles{
+    height: 320px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: white;
+    margin-top: 20px;
+}
+.t_a_box{
+    margin-left: 10px;
+    padding-top: 45px;
+    height: 320px;
+    width: 731px;
+}
+.t_a_box .t_a_b_1{
+    width: 100%;height: 22px;
+}
+.t_a_box .t_a_b_1 a{
+    padding-top: 45px;
+}
+.t_a_box .t_a_b_1 a #d1{
+    width:57px;height: 22px;background-color: #345be1;border-radius: 5px;float: left
+}
+.t_a_box .t_a_b_1 a #d1 span{
+    color: #d7d7d7;font-size: 20px;line-height: 21px;
+}
+.t_a_box .t_a_b_1 a #d2{
+    width: 664px;float: right;text-align: left;margin-left: 10px
+}
+.t_a_box .t_a_b_1 a #d2 span{
+    color: #505050;font-family: 'Microsoft Yahei';
+}
+.t_a_box .t_a_b_2{
+    height: 200px;width: 387px;margin-top: 35px;float: left;
+}
+.t_a_box .t_a_b_2 a{
+    display: block; margin-bottom: 36px;width: 387px;height: 20px;
+}
+.t_a_box .t_a_b_2 a #d1{
+    float:left; width: 83px;border: 1px solid #b6b6b6;border-radius: 5px;text-align: center;
+}
+.t_a_box .t_a_b_2 a #d1 span{
+    font-family: 'Microsoft Yahei';color: #345be1;font-size: 16px;line-height: 15px;
+}
+.t_a_box .t_a_b_2 a #d2{
+    float: right;width: 294px;text-align: left
+}
+.t_a_box .t_a_b_2 a #d2 span{
+    font-family: 'Microsoft Yahei';color: #505050;font-size: 16px
+}
+.t_a_box .t_a_b_3{
+    margin-top: 50px;margin-right:10px;width: 318px;height: 166px;border-radius: 8px;float: right;overflow: hidden;
+}
+.dn_dynamics_articles{
+    height: 320px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: white;
+}
+.dn_dynamics_articles #d_d_a_top{
+
+}
+/*技术交流与学院动态CSS结束*/
+/*学员心声CSS开始*/
 .student_voice{
     margin:64px auto auto auto;
     width:1200px;
@@ -774,9 +877,110 @@ body,ul,li{
     position: relative;
     right: 20px;
 }
-/*==============================学员心声CSS结束========================*/
+/*学员心声CSS结束*/
+/*办公环境CSS开始*/
+.office_environment{
+    width: 1200px;
+    height: 308px;
+    margin: 50px auto auto auto;
+}
+.office_environment .headings{
+    height: 30px;
+    width: 593px;
+    text-align: left;
+    margin-bottom: 17px;
+}
+.office_environment .headings #one{
+    font-family: "Microsoft YaHei" ;
+    font-size: 25px;
+    color: #666666;
+    line-height: 100%;
+}
+.office_environment .headings #two{
+    font-family: "Microsoft YaHei" ;
+    font-size: 15px;
+    color: #666666;
+}
+.office_environment .o_e{
+    display: block;
+    width: 1200px;
+    height: 261px;
+    min-height: 1px;
+    background: #fff;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, .14);
+    box-shadow: 0 3px 8px -6px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+}
+.o_e_img_box{
+    width: 1180px;
+    height: 261px;
+    margin: 17px 10px;
+    overflow:hidden;
+}
+.o_e_img_box ul li{
+    float: left;
+    padding: 0 5px;
+}
+/*办公环境CSS结束*/
+/*底部企业合作CSS开始*/
+.talent_output{
+    margin-top:50px;
+    height:412px;
+    width:100%;
+    text-align:center;
+    background:url('../img/homePage/bg3.jpg');
+}
+.t_o_heading{
+    padding-top:56px;
+    margin:auto auto;
+    width:1200px;
 
-/*悬浮按钮*/
+}
+.t_o_heading ul:nth-child(1) li:nth-child(1),.t_o_heading ul:nth-child(1) li:nth-child(3){
+    line-height:100%;
+    width:384px;
+}
+.t_o_heading ul:nth-child(1) li:nth-child(1) div{
+    width:384px;
+    height:1px;
+    background-color:#fff;
+    margin-top:20px;
+}
+.t_o_heading ul:nth-child(1) li:nth-child(3) div{
+    width:384px;
+    height:1px;
+    background-color:#fff;
+    margin-top:20px;
+}
+.t_o_heading ul:nth-child(1) li:nth-child(2){
+    margin-left:52px;
+    margin-right:52px;
+}
+.t_o_heading ul:nth-child(1) li:nth-child(2) span{
+    font-size:32px;
+    color:#fff;
+    line-height:100%;
+}
+#t_o_heading_two_ul{
+    margin:12px auto auto auto;
+}
+#t_o_heading_two_ul li{
+    width:1200px;
+}
+#t_o_heading_two_ul li span{
+    font-size:16px;
+    color:#fff;
+}
+.cooperationCompany{
+    padding-top:66px;
+    width:1200px;
+}
+/*底部企业合作CSS结束*/
+/*悬浮按钮CSS开始*/
 .suspension{
     z-index: 9999;
     position: fixed ! important;
@@ -808,3 +1012,4 @@ body,ul,li{
 .suspension .sup_right img{
     width: 80px;
 }
+/*悬浮按钮CSS结束*/

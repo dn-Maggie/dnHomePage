@@ -21,8 +21,6 @@ $(".mask_tm").hover(function () {
 $(".picbox").kxbdMarquee();
 /*底部办公环境图片滚动*/
 $(".o_e_img_box").kxbdMarquee();
-
-
 /*顶部菜单栏hover效果js结束*/
 /*优秀学员展示轮播图jS开始*/
      var _index=0;
