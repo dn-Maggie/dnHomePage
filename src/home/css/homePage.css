@@ -787,9 +787,23 @@ body,ul,li{
     width: 100%;
     border-radius: 8px;
     background-color: white;
+    padding-left: 10px;
+    padding-top: 45px;
+    text-align: left;
 }
 .dn_dynamics_articles #d_d_a_top{
-
+    width: 438px;
+    height: 30px;
+    margin-bottom: 30px;
+}
+.dn_dynamics_articles #d_d_a_other{
+    width: 438px;
+    height: 30px;
+    margin-bottom: 25px;
+}
+.dn_dynamics_articles #d_d_a_other span{
+    line-height: 30px;
+    color: red;
 }
 /*技术交流与学院动态CSS结束*/
 /*学员心声CSS开始*/
