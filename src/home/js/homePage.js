@@ -17,6 +17,15 @@ $(".mask_tm").hover(function () {
 },function () {
     $(this).css("display","none")
 });
+$(".technique_articles #atrical").hover(function () {
+    var _href = $(this).attr('href');
+    var _for = $(this).attr('for');
+    var _src = "./img/homePage/articalsimg/"+_for+".jpg";
+    var el_src = document.getElementById('atrical_img');
+    el_src.src = _src;
+    var el_href = document.getElementById('atrical_img_a');
+    el_href.href = _href;
+    });
 /*讲师团队图片滚动*/
 $(".picbox").kxbdMarquee();
 /*底部办公环境图片滚动*/
