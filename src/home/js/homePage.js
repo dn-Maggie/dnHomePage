@@ -1,6 +1,6 @@
 // JavaScript Document
 $(document).ready(function(e) {
-/*顶部菜单栏hover效果js开始*/
+/*顶部菜单栏hover效果js*/
 $(".tm_li").hover(function () {
     $(this).css("background-color","#090a3a");
     $(this).find("span").css("color","white");
@@ -17,6 +17,7 @@ $(".mask_tm").hover(function () {
 },function () {
     $(this).css("display","none")
 });
+/*技术交流版块图片切换*/
 $(".technique_articles #atrical").hover(function () {
     var _href = $(this).attr('href');
     var _for = $(this).attr('for');
@@ -211,3 +212,25 @@ $.fn.kxbdMarquee.defaults={
 $.fn.kxbdMarquee.setDefaults=function(settings) {
     $.extend( $.fn.kxbdMarquee.defaults, settings );
 };
+$(function(){
+		/*==============================就业信息jS========================*/
+		var timer;
+		autoPlay();
+		$('.scroll-msg ul').mouseenter(function(){
+		    clearInterval(timer);
+		});
+		$('.scroll-msg').mouseout(function(){
+		    autoPlay();
+		})
+		function autoPlay() {
+		    clearInterval(timer);
+		//设置定时器实现不停上移
+		 timer = setInterval(function(){
+		 //把整个内容的列表div整体往上移动一个标题的高度动画
+	        $('.scroll-msg ul').animate({marginTop:'-38px'},"800",function(){
+		            $(this).children('li').eq(0).appendTo($(this));
+		            $(this).css('margin-top',0);
+		        });
+		    },800);
+		 }
+     });

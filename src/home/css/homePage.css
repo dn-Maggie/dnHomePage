@@ -21,6 +21,9 @@ img{
 a{
     text-decoration:none;
 }
+a:hover{
+text-decoration:none;
+}
 body,ul,li{
     padding:0; margin:0;
 }
@@ -543,7 +546,6 @@ body,ul,li{
 /*导师团队轮播图CSS结束*/
 /*学员展示轮播图CSS开始*/
 .student_show{
-    margin-top:50px;
     height:589px;
     width: 100%;
 }
@@ -680,6 +682,254 @@ body,ul,li{
     background:#ec6c00;
 }
 /*学员展示轮播图CSS结束*/
+/*就业信息list && 学员心声公共板块 begin*/
+.f-fl {
+    float: left;
+}
+.f-fr {
+    float: right;
+}
+/*就业信息list && 学员心声公共板块 end*/
+/*就业信息list begin*/
+.tcl {
+    width: 718px;
+    margin-left: 10px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+.jyxx {
+    width: 740px;
+    overflow: hidden;
+}
+
+.student_voice .jyxx .headings{
+    height: 30px;
+    width: 593px;
+    text-align: left;
+    margin-bottom: 17px;
+}
+.student_voice .jyxx .headings #one{
+    font-family: "Microsoft YaHei" ;
+    font-size: 25px;
+    color: #666666;
+    line-height: 100%;
+}
+.student_voice .jyxx .headings #two{
+    font-family: "Microsoft YaHei" ;
+    font-size: 15px;
+    color: #666666;
+}
+.student_voice .star-students .headings{
+    height: 30px;
+    width: 448px;
+    text-align: left;
+    margin-bottom: 17px;
+}
+.student_voice .star-students .headings #one{
+    font-family: "Microsoft YaHei" ;
+    font-size: 25px;
+    color: #666666;
+    line-height: 100%;
+}
+.student_voice .star-students .headings #two{
+    font-family: "Microsoft YaHei" ;
+    font-size: 15px;
+    color: #666666;
+}
+.jyxx-list {
+    display: block;
+    width: 740px;
+    min-height: 1px;
+    background: #fff;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, .14);
+    box-shadow: 0 3px 8px -6px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+}
+.jyxx_scroll {
+    display: inline-block;
+    width: 718px;
+    overflow: hidden;
+    color: aliceblue;
+}
+.jyxx_scroll ul.sc{
+    height: 45px;
+    font: sans-serif bold 19px;
+    text-align: center;
+    line-height: 45px;
+    background: rgb(52,91,225);
+}
+.sc:last-of-type {
+    margin-right: 0;
+}
+.scroll-msg {
+    margin: 0 auto;
+    width: 718px;
+    height: 415px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, .14);
+    box-shadow: 0 3px 8px -6px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    position:relative;
+    top:0px
+	animation:myfirst 4s;
+    -moz-animation:myfirst 4s; /* Firefox */
+    -webkit-animation:myfirst 4s; /* Safari and Chrome */
+    -o-animation:myfirst 4s; /* Opera */
+}
+.scroll-msg ul{
+	height: 1000px;
+
+}
+.scroll-msg ul li {
+	transition-duration:0.1s;
+    height: 38px;
+    line-height: 38px;
+    color: #333;
+    width: 718px;
+}
+.scroll-msg ul .lix1 {
+    background-color: rgb(223,227,241);
+}
+.scroll-msg ul .lix2 {
+    background-color: #ffffff;
+}
+.scroll-msg span {
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    float: left;
+}
+.jyxx_scroll .s1 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-align: center;
+    width: 33%;
+}
+.jyxx_scroll .s2 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-align: center;
+    width: 33%;
+}
+.jyxx_scroll .s3 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-align: center;
+    width: 33%;
+}
+.jyxx_scroll .sc li {
+    float: left;
+    color: #fff;
+    font-size: 16px;
+}
+.jy_bottom{
+    text-align: left;
+    height: 50px;
+    line-height: 50px;
+    color: #676767;
+}
+/*就业信息list end*/
+/*学员心声 begin*/
+.star-students{
+	position: relative;
+}
+.star-list {
+    width: 440px;
+    height: 522px;
+    min-height: 1px;
+    background: #fff;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, .14);
+    box-shadow: 0 3px 8px -6px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    padding: 20px;
+}
+.star-list .carousel-indicators {
+    right: 20px;
+    bottom: 5px;
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    left: 88%;
+
+}
+.star-list .carousel-indicators li{
+
+    display: inline-block;
+/*    *display: inline;*/
+    margin: 0 1px;
+    zoom: 1;
+    background: #676767;
+    display: block;
+    height: 10px;
+    overflow: hidden;
+    text-indent: -99em;
+    width: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.star-list .carousel-indicators li:hover {
+     background: #345be1;
+}
+.star-list .carousel-indicators li.active {
+     background: #345be1;
+}
+.star-list li .item-box {
+    float: left;
+    width: 100%;
+    height: 41.8%;
+    padding: 30px 0;
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+    border-bottom: rgba(210, 210, 210, 0.76) 1px solid;
+}
+.star-list li .item-box .des span {
+   display: block;
+   text-align: left;
+   font: 18px "microsoft yahei";
+   color:  #2d2d2d;
+   margin-bottom: 5px;
+}
+.star-list li .item-box .head_img {
+  margin:0 10px;
+}
+.star-list li .item-box .head_img img{
+ 	margin:0;
+  	width: 100%;
+	height: 100%;
+}
+.star-list li .item-box p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-align: left;
+    max-width: 290px;
+    margin-top: 5px;
+    font-size: 12px;
+    width: 280px;
+    color: #676767;
+}
+.star-list li .item-box p.voice_des {
+	white-space: normal;
+	margin-top: 20px;
+	height: 30px;
+}
+/*学员心声 end*/
 /*技术交流与学院动态CSS开始*/
 .tech_comut_dn_dynam{
     width: 1200px;
@@ -759,7 +1009,7 @@ body,ul,li{
     width: 664px;float: right;text-align: left;margin-left: 10px
 }
 .t_a_box .t_a_b_1 a #d2 span{
-    color: #505050;font-family: 'Microsoft Yahei';
+    color: #505050;font-family: 'Microsoft Yahei';font-size:20px;
 }
 .t_a_box .t_a_b_2{
     height: 200px;width: 387px;margin-top: 35px;float: left;
@@ -792,111 +1042,41 @@ body,ul,li{
     text-align: left;
 }
 .dn_dynamics_articles #d_d_a_top{
-    width: 438px;
+    max-width: 438px;
     height: 30px;
     margin-bottom: 30px;
 }
+.dn_dynamics_articles #d_d_a_top span{
+    color: #505050;font-family: 'Microsoft Yahei';font-size:20px;
+}
+.dn_dynamics_articles #d1{
+    float:left; width: 83px;border: 1px solid #b6b6b6;border-radius: 5px;text-align: center;
+}
+.dn_dynamics_articles #d1 span{
+    font-family: 'Microsoft Yahei';color: #345be1;font-size: 16px;line-height: 15px;
+}
 .dn_dynamics_articles #d_d_a_other{
-    width: 438px;
+    max-width: 438px;
     height: 30px;
     margin-bottom: 25px;
 }
-.dn_dynamics_articles #d_d_a_other span{
-    line-height: 30px;
-    color: red;
+#dy_ar_ti_span{
+    margin-left:10px;
+    color:#505050;
 }
 /*技术交流与学院动态CSS结束*/
 /*学员心声CSS开始*/
 .student_voice{
-    margin:64px auto auto auto;
+    margin:50px auto 30px auto;
     width:1200px;
-    height:346px;
-}
-.student_voice .student_voice_item{
-    float: left;
-    width: 395px;
-    height: 346px;
-    background: rgb(227,227,227);
-    border: 7px #fafafa solid;
-    box-sizing: border-box;
-}
-.student_voice_item .student_voice_item_header{
-    height: 78px;
-    width: 100%;
-    background: rgb(168,168,168);
-    position: relative;
-    z-index: 99;
-}
-.student_voice_item_header>span{
-    display: block;
-    color: #fff;
-}
-.student_voice_item_header>span:nth-child(1){
-    font: normal bold 25px/50px arial,sans-serif;
-    height: auto;
-}
-.student_voice_item:hover .student_voice_item_header{
-	 background: rgb(30,120,196);
-}
-.student_voice_item:hover .student_voice_item_content li>span:nth-child(1){
-    color: rgb(30,120,196);
-    border: 1px solid rgb(30,120,196);
-}
-.student_voice_item .student_voice_item_content{
-    color: rgb(80,80,80);
-    height: 268px;
-    overflow: hidden;
-}
-.student_voice_item_content li{
-    height: 30%;
-    margin: 0 20px;
-}
-.student_voice_item_content li:nth-child(1){
-    margin-top: 30px;
-}
-.student_voice_item_content li:nth-child(3){
-    margin-bottom: 30px;
-}
-.student_voice_item_content li>span{
-
-}
-.student_voice_item_content li>span:nth-child(1){
-   	height: 22px;
-    width: 72px;
-    border: 1px solid rgb(80,80,80);
-    display: inline-block;
-    position: relative;
-}
-.student_voice_item_content li a{
-    cursor: pointer;
-    color: rgb(80,80,80);
-    text-align: left;
-    width: 256px;
-    margin-left: 10px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    word-break: break-all;
-    float: right;
-    cursor: pointer;
-}
-.student_voice_item_content li a:hover{
-    text-decoration: none;
-    color: rgb(30,120,196);
-}
-.student_voice_item_content li>span:nth-child(3){
-    float: right;
-    position: relative;
-    right: 20px;
+    height:554px;
 }
 /*学员心声CSS结束*/
 /*办公环境CSS开始*/
 .office_environment{
     width: 1200px;
     height: 308px;
-    margin: 50px auto auto auto;
+    margin: 70px auto auto auto;
 }
 .office_environment .headings{
     height: 30px;
