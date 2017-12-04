@@ -108,7 +108,7 @@ body,ul,li{
     height:148px;
     background-color:#01c9b4;
     border-radius:10px;
-    margin:24px 20px 0 0;
+    margin:20px 20px 0 0;
     display: inline-block;
 }
 .bl_gr_re ul li:nth-child(3){
@@ -225,6 +225,7 @@ body,ul,li{
     height:405px;
     border-radius: 10px;
     background-color: white;
+    border: 1px solid rgba(0, 0, 0, .14);
 }
 .tencent_course .t_certificate{
     width:595px;
@@ -897,12 +898,36 @@ body,ul,li{
     margin-bottom: 30px;
     border-bottom: rgba(210, 210, 210, 0.76) 1px solid;
 }
-.star-list li .item-box .des span {
+.star-list li .item-box .des{
+    height:165px;
+}
+.star-list li .item-box .des #name {
    display: block;
    text-align: left;
    font: 18px "microsoft yahei";
    color:  #2d2d2d;
    margin-bottom: 5px;
+}
+.star-list li .item-box .des p{
+    font-size:12px;
+    color:#676767;
+    font-family: "Microsoft YaHei" ;
+    line-height:15px;
+}
+.star-list li .item-box .des div{
+    margin-top:10px;
+    float:left;
+    border-radius:5px;
+    border:1px solid #345be1;
+    width:67px;
+    height:25px;
+}
+.star-list li .item-box .des div span{
+    color:#345be1;
+    font-size:12px;
+    line-height:25px;
+    font-family: "Microsoft YaHei" ;
+    letter-spacing:3px;
 }
 .star-list li .item-box .head_img {
   margin:0 10px;
@@ -934,7 +959,8 @@ body,ul,li{
 .tech_comut_dn_dynam{
     width: 1200px;
     height: 370px;
-    margin: 50px auto auto auto;
+    margin: 75px auto auto auto;
+
 }
 .t_c_d_d_left{
     width: 741px;
@@ -986,10 +1012,11 @@ body,ul,li{
     border-radius: 8px;
     background-color: white;
     margin-top: 20px;
+    border: 1px solid rgba(0, 0, 0, .14);
 }
 .t_a_box{
     margin-left: 10px;
-    padding-top: 45px;
+    padding-top: 35px;
     height: 320px;
     width: 731px;
 }
@@ -1038,8 +1065,9 @@ body,ul,li{
     border-radius: 8px;
     background-color: white;
     padding-left: 10px;
-    padding-top: 45px;
+    padding-top: 35px;
     text-align: left;
+    border: 1px solid rgba(0, 0, 0, .14);
 }
 .dn_dynamics_articles #d_d_a_top{
     max-width: 438px;
@@ -1060,6 +1088,9 @@ body,ul,li{
     height: 30px;
     margin-bottom: 25px;
 }
+.dn_dynamics_articles i{
+
+}
 #dy_ar_ti_span{
     margin-left:10px;
     color:#505050;
@@ -1067,7 +1098,7 @@ body,ul,li{
 /*技术交流与学院动态CSS结束*/
 /*学员心声CSS开始*/
 .student_voice{
-    margin:50px auto 30px auto;
+    margin:65px auto 30px auto;
     width:1200px;
     height:554px;
 }
@@ -1076,7 +1107,7 @@ body,ul,li{
 .office_environment{
     width: 1200px;
     height: 308px;
-    margin: 70px auto auto auto;
+    margin: 60px auto auto auto;
 }
 .office_environment .headings{
     height: 30px;
