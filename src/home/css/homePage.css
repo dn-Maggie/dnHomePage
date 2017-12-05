@@ -952,6 +952,7 @@ body,ul,li{
 .star-list li .item-box p.voice_des {
 	white-space: normal;
 	margin-top: 20px;
+	width:250px;
 	height: 30px;
 }
 /*学员心声 end*/
@@ -1027,7 +1028,7 @@ body,ul,li{
     padding-top: 45px;
 }
 .t_a_box .t_a_b_1 a #d1{
-    width:57px;height: 22px;background-color: #345be1;border-radius: 5px;float: left
+    width:57px;height: 22px;background-color: #345be1;border-radius: 5px;float: left;margin-top:4px;
 }
 .t_a_box .t_a_b_1 a #d1 span{
     color: #d7d7d7;font-size: 20px;line-height: 21px;
