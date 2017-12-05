@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>微信用户行为统计后台</title>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/highcharts.js"></script>
+<script type="text/javascript" src="js/exporting.js"></script>
+
+<script type="text/javascript">
+	 $(function () {
+    $('#container').highcharts({
+        chart: {                                                          
+        },                                                                
+        title: {                                                          
+            text: '微信用户行为统计后台'
+        },  
+		//x轴
+        xAxis: {                                                          
+            categories: ['一月', '二月', '三月', '四月', '五月']
+        },                                                                
+        tooltip: {                                                        
+            formatter: function() {                                       
+                var s;                                                    
+                if (this.point.name) { // the pie chart                   
+                    s = ''+                                               
+                        this.point.name +': '+ this.y +' 亿次';
+                } else {                                                  
+                    s = ''+                                               
+                        this.x  +': '+ this.y;                            
+                }                                                         
+                return s;                                                 
+            }                                                             
+        },                                                                
+        labels: {                                                         
+            items: [{                                                     
+                html: '用户行为汇总',
+                style: {                                                  
+                    left: '40px',                                         
+                    top: '8px',                                           
+                    color: 'black'                                        
+                }                                                         
+            }]                                                            
+        },                                                                
+        series: [{                                                        
+            type: 'column',                                               
+            name: '朋友圈',
+            data: [3, 2, 4]
+        }, {                                                              
+            type: 'column',                                               
+            name: '摇一摇',
+            data: [5, 7, 6]
+        }, {                                                              
+            type: 'column',
+            name: '语音消息',
+            data: [4, 9, 1]
+        }, {                                                              
+            type: 'column',
+            name: '视频通话',
+            data: [3, 6, 3],
+            marker: {                                                     
+            	lineWidth: 2,                                               
+            	lineColor: Highcharts.getOptions().colors[3],
+            	fillColor: 'white'
+            }                                                             
+        }, {                                                              
+            type: 'pie',                                                  
+            name: 'Total consumption',                                    
+            data: [{                                                      
+                name: '朋友圈',
+                y: 13,                                                    
+                color: Highcharts.getOptions().colors[0] // Jane's color
+            }, {
+                name: '摇一摇',
+                y: 23,                                                    
+                color: Highcharts.getOptions().colors[1] // John's color
+            }, {                                                          
+                name: '语音消息',
+                y: 19,                                                    
+                color: Highcharts.getOptions().colors[2] // Joe's color
+            },{
+                name: '视频通话',
+                y: 20,
+                color: Highcharts.getOptions().colors[3] // Joe's color
+            }],
+            center: [100, 80],                                            
+            size: 130,                                                    
+            showInLegend: false,                                          
+            dataLabels: {                                                 
+                enabled: false                                            
+            }                                                             
+        }]                                                                
+    });                                                                   
+});                                                                       				         				
+</script>
+
+</head>
+<body>
+<div id="container" style="width:850px;height:500px;margin:0 auto"></div>
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p>数据来自Jason用户行为统计框架</p>
+</div>
+</body>
+</html>

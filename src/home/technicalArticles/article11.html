@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>动脑学院-中高端在线教育平台</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="Keywords" content="动脑学院,IT职业教育,IT在线教育平台,IT在线教育,IT在线学习,it职业培训,android,前端,java,html5,测试"/>
+		<meta name="Description" content="动脑学院,IT职业教育,IT在线教育平台,IT在线教育,IT在线学习,it职业培训,android,前端,java,html5,测试"/>
+		<link rel="stylesheet" type="text/css" href="../css/global.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/about.css" />
+		<link rel="stylesheet" type="text/css" href="../css/basicCSS.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/headerFooterCSS.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/articleCSS.css"/>
+		<link rel="Shortcut Icon" href="../img/favicon.ico" type="image/x-icon" />
+	</head>
+	<body>
+	<div class="header_div">
+		<iframe align="center" width="1200px;"  height="70px;" src="../header.html"  frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+	</div>
+		<section>
+			<div class="cc">
+				<div class="bbox">
+		        	<div class="nav">
+		            	<ul>
+		                	<li><a href="../about/about.html">简介</a></li>
+		                    <li><a href="../about/content-us.html">联系我们</a></li>
+		                    <li><a href="../about/join-us.html">加入我们</a></li>
+		                    <li><a href="../about/studentVoice1.html">学员心声</a></li>
+		                    <li class="active"><a href="article1.html">技术分享</a></li>
+		                    <li><a href="../about/teacher.html">讲师团队</a></li>
+		                    <li><a href="../about/answer.html">常见问题</a></li>
+		            	</ul>
+		            </div>
+		            <div class="text">
+						<div class="main">
+							<ul>
+								<li class="headings">
+                					<span>在Android初学之路上，每个Android实习生都会遇到各式各样的瓶颈。</span>
+								</li>
+								<li class="first_paragraph">
+<pre class="body_text">
+克服瓶颈要从克服自己对一切瓶颈的偏见做起，把逃避瓶颈的行为变成享受瓶颈带来的乐趣的过程。要知道喜力比国产啤酒贵好多的一条重要原因就在于喜力的瓶颈：你现在去买一瓶玻璃瓶装喜力，用手握住瓶颈，大拇指按住那颗星，然后用你最熟悉的动作撸瓶颈，你会喜欢这种手感的。
+ 
+Android布局和屏幕适配
+  
+        Android初学者遇到的第一个瓶颈就是Android 布局的编写。首先Android的layout是用XML写的，而大多数大学生在大学阶段学习网页制作，都是用HTML绘制基本控件，然后用CSS进行页面美化；而Android却用XML绘制界面，style也是用XML写。学习XML最重要的熟能生巧，多练习练习就顺手了，另外XML和HTML有很多相似的地方，比如padding与margin的区别都是一样的。
+ 
+        此外Android系统碎片化严重，不同型号的手机有着不同的屏幕尺寸和不同的分辨率。为了解决这个问题，我们可以把背景贴图做成.9png格式，并且用内容和padding撑起控件。如果需要适配的机型实在太极端，我们可以百分比布局解决这个问题——PercentRelativeLayout和PercentFrameLayout等。
+ 
+不同组件的生命周期
+ 
+        Android初学者遇到的第二个瓶颈就是生命周期，Android的生命周期主要有Activity生命周期、Fragment生命周期、Service生命周期三种。学不好Activity的生命周期，你做不好界面跳转的特效，也做不好系统Activity（相机等）的回调；学不好Fragment的生命周期，你写不出惰性加载；学不好Service的生命周期，你连后台运行都做不到。学习生命周期，要记住“文无图时少直观，图无文时难入微”，用图表辅助记忆。
+ 
+网络请求和json解析
+ 
+        Android是移动互联网的重要组成部分，网络请求和Json解析是Android学习中的重要环节，很多初学者会在此处遭遇瓶颈。
+ 
+        为了突破这个瓶颈，初学者应该先选择合适的框架以尽快解决实习工作中的问题。常用的网络请求框架有Volley和OKHttp等；常见的json解析框架有Gson和Jackson等，如果你的求职目标是阿里巴巴集团，学习一下FastJson是可以助你一臂之力的；此外还有把网络请求和json解析整合到一起的Retrofit。
+ 
+        实习生初入企业，要记住用工作时间解决工作中的问题，知识的探索和能力的提升要利用自己的业余时间。下班后要学习以上框架的源码和实现原理，比如Android的网络请求必须在子线程中进行，否则会造成NetworkOnMainThreadException；现在的网络请求都是基于HttpURLConnection的，任何大谈HttpClient的资料都是过时的；还要弄清楚Handler的原理、ThreadPool的原理、AsyncTask的原理等；json解析方面的知识还有JSONObject和JSONArray的区别、Java的泛型机制、Java的反射机制等等。
+ 
+图片加载和内存优化
+ 
+        Android机的价位一般比iPhone低得多，所以Android系统比iOS系统更容易遇到内存溢出问题（OutOfMemoryError，简称：OOM），这也是初学者常见的学习瓶颈之一。OOM最多发于图片，其次布局中嵌入的地图、视频等吃内存大户也是OOM的罪魁祸首之一。
+ 
+        解决加载图片的OOM应该先选择Picasso、Glide、Fresco等框架以尽快解决工作中的问题，然后利用个人时间学习Android缓存机制——LruCache和DiskLruCache；地图、视频的OOM应该在界面被回收时清除控件、停止服务；其他的OOM应该用弱引用和软引用解决。
+ 
+RecyclerView
+ 
+        Android最常用也是最复杂的控件是RecyclerView（2014及以前的资料是ListView），因为滑动冲突、列表中数据修改等问题都会在RecyclerView中体现。为了克服这些瓶颈，必须要搞清楚RecyclerView.Adapter（也包括以前的BaseAdapter）的工作原理，ViewHolder的工作原理，以及ViewGroup的事件分发机制等内容，这些内容不下大力气学习是不能完全掌握的。
+ 
+        克服了以上瓶颈后，估计实习生也该到了毕业转正的时间了，进阶路上还有新的瓶颈。新瓶颈有新的玩法：这种玩法需要双手操作，如果用另一只手按住打开着的瓶口撸瓶颈，你可以一边撸一边使劲摇，玩HIGH的时候突然松开按住瓶口的手。
+ 
+自定义控件
+ 
+        Android自带的控件不能满足太复杂的界面控件需求，因此绘制自定义控件也是Android工程师的必备技能。绘制自定义控件需要掌握View的几个常见方法的重写，如onDraw()、onMeasure()、onLayout()等；对事件分发机制的了解也应该比RecyclerView更精熟；此外还需要掌握Canvas和Animator的相关知识，Android的Canvas和HTML5的Canvas有很多相似性，可以以此突破Canvas的学习瓶颈。
+ 
+进程间通信
+ 
+        不同App之间以及同一个App的不同进程之间需要多进程通信，多进程通信在视频播放等占用大量资源的场合是很有必要的。进程间通信的初学者百度“多进程”会被AIDL绕得云里雾里，其实你只要试试Messenger框架，一切进程间通信的难题都会迎刃而解。
+ 
+Android性能全面优化和crash分析
+ 
+        Android初学者会遇到的最后一个瓶颈是Android性能全面优化。前面提到的Android内存优化是Android性能优化中最重要的部分，但也只是一小部分，Android性能优化还包括安装包体量优化、GUI绘制优化、电量和流量优化等。
+ 
+        GUI方面可以利用ViewStub和去掉其他不必要的背景来避免OverDraw；安装包体积可以用压缩图片、去除重复且无用的依赖等方式进行优化；电量和流量可以通过用推送代替轮询、用GZIP文件格式下载过长的数据流等方式进行优化。
+ 
+        在移动应用性能方面，崩溃（Crash）带来的影响是最为严重的，Crash指App在运行过程中出现大段用户正在进行的操作的强制关闭现象。Crash会造成关键业务中断、产品口碑变差、用户流失等问题。Crash可以用UncaughtExceptionHandler捕捉，也可以利用UMeng和Bugly等服务分析，请注意：如果打算跳槽到阿里，就用UMeng，想要跳槽到腾讯，就用Bugly。
+ 
+        突破了上述所有瓶颈以后，Android程序员的技术水平都可以达到独当一面的程度，甩掉了初学者帽子的程序员会发现头顶不再是瓶颈，而是从技术到管理的天花板。
+
+
+
+
+</pre>
+								</li>
+							</ul>
+						</div>
+		            </div>
+		        </div>
+			</div>
+		</section>
+	<div class="footer_div">
+		<iframe align="center" width="1024px;"  height="350px;" src="../footer.html"  frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+	</div>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="../js/swiper-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/global.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

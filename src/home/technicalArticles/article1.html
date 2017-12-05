@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>动脑学院-中高端在线教育平台</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="Keywords" content="动脑学院,IT职业教育,IT在线教育平台,IT在线教育,IT在线学习,it职业培训,android,前端,java,html5,测试"/>
+		<meta name="Description" content="动脑学院,IT职业教育,IT在线教育平台,IT在线教育,IT在线学习,it职业培训,android,前端,java,html5,测试"/>
+		<link rel="stylesheet" type="text/css" href="../css/global.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/about.css" />
+		<link rel="stylesheet" type="text/css" href="../css/basicCSS.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/headerFooterCSS.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/articleCSS.css"/>
+		<link rel="Shortcut Icon" href="../img/favicon.ico" type="image/x-icon" />
+	</head>
+	<body>
+	<div class="header_div">
+		<iframe align="center" width="1200px;"  height="70px;" src="../header.html"  frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+	</div>
+		<section>
+			<div class="cc">
+				<div class="bbox">
+		        	<div class="nav">
+		            	<ul>
+		                	<li><a href="../about/about.html">简介</a></li>
+		                    <li><a href="../about/content-us.html">联系我们</a></li>
+		                    <li><a href="../about/join-us.html">加入我们</a></li>
+		                    <li><a href="../about/studentVoice1.html">学员心声</a></li>
+		                    <li class="active"><a href="article1.html">技术分享</a></li>
+		                    <li><a href="../about/teacher.html">讲师团队</a></li>
+		                    <li><a href="../about/answer.html">常见问题</a></li>
+		            	</ul>
+		            </div>
+		            <div class="text">
+						<div class="main">
+							<ul>
+								<li class="headings">
+                					<span>Java中的垃圾回收原理</span>
+								</li>
+								<li class="first_paragraph">
+<pre class="body_text">
+	用户程序（mutator）会修改还堆区中的对象集合，从存储管理器处获取空间，创建对象，还可一引入和消除对已有对象的引用。
+当mutator不能“达到”某些对象的时候，这些对象就成了垃圾。
+目的：找到不可达的对象，并将这些对象交给跟踪空闲空间的存储管理器，收回他们所占的资源。
+
+一些基本概念
+	类型安全：任何数据分量的类型都是可确定的。
+	可以在编译时刻确定数据的类型称为静态类型安全，运行时刻确定称为动态类型。
+
+类型不安拳的语言不适合使用自动垃圾回收。
+	在Java中，除了整型和引用这样的基本类型，所有对象都被分配在堆区而不是栈区。这种设计使得程序员不需要关注变量的生命周期，但代价是产生更多的垃圾。
+
+可达性
+	对任何指针解引用就可以被程序直接访问的数据则为可达的。
+
+局部性原理
+	如果一个程序方位的存储位置很可能将在一个很短的时间段再次被访问，则称这个程序具有时间局部性。如果被访问过的存储位置的临近位置很可能在一个很短的时间段内被访问，则该程序具有空间局部性。  通常认为程序把90%的时间来执行10%的代码。
+
+几种垃圾回收器的原理
+	标记－清除收集器
+	这种收集器首先遍历对象图并标记可到达的对象，然后扫描堆栈以寻找未标记对象并释放它们的内存。这种收集器一般使用单线程工作并停止其他操作。并且，由于它只是清除了那些未标记的对象，而并没有对标记对象进行压缩，导致会产生大量内存碎片，从而浪费内存。
+
+	标记－压缩收集器
+	有时也叫标记－清除－压缩收集器，与标记－清除收集器有相同的标记阶段。在第二阶段，则把标记对象复制到堆栈的新域中以便压缩堆栈。这种收集器也停止其他操作。
+
+	复制收集器
+	这种收集器将堆栈分为两个域，常称为半空间。每次仅使用一半的空间，生成的新对象则放在另一半空间中。GC运行时，它把可到达对象复制到另一半空间，从而压缩了堆栈。这种方法适用于短生存期的对象，持续复制长生存期的对象则导致效率降低。并且对于指定大小堆来说，需要两倍大小的内存，因为任何时候都只使用其中的一半。
+
+	增量收集器
+	增量收集器把堆栈分为多个域，每次仅从一个域收集垃圾，也可理解为把堆栈分成一小块一小块，每次仅对某一个块进行垃圾收集。这会造成较小的应用程序中断时间，使得用户一般不能觉察到垃圾收集器正在工作。
+
+部分回收原理
+	通常80%～90%的新分配对象在几百万条指令之内或者再分配了。
+
+分代收集器（Generational garbage coolection）
+	它是基于拷贝回收器和部分回收原理。充分利用大多数对象“英年早逝”的特性的有效方法。将堆区分成一系列小的区域，用0,1,2......n对它们进行编号，序号越小的区域存放的对象越年轻，对象首先在0区域被创建，填满后垃圾被回收，可达对象被移到1区，每一轮垃圾回收都是针对序号小于等于i的区域进行的，i为当前被填满区域的最高编号。
+
+Garbage Collectors in the J2SE 5.0 HotSpot JVM垃圾回收器的职责有
+	1）分配内存；
+	2）确保引用的内存在内存中；
+	3）回收内存中不可达的对象。
+
+制定垃圾回收算法的时候需要做出一些权衡和选择：
+	1）串行还是并行；
+	2）并发还是stop-the-world；
+	3）内存紧致还是不紧致还是采用拷贝算法。
+
+J2SE 5.0 HotSpot JVM中的四种GC采用的是世代收集器的原理，如下：
+	hotspot(j2se 5.0,按白皮书上的说法也适用于6.0)使用的是所谓的Generational Collection机制,也就是把对象分为young和old(还有一种是permanent),young对象经过几次回收后(存活较长时间后),就会成为old对象.之所以采用这种机制,是基于以下观察:大部分新建对象的引用不会持续太久,也就说是会die young;少部分的引用会持续下来.
+
+	因此,young generation 进行Collection会更多,因此使用的算法对时间效率的要求高.而old generation 保存的数据较多,使用的算法对空间的要求效率相对而言要求就较高了.把对象分为不同的generation,便于采用不同的算法进行操作.
+
+
+
+HotSpot的四种GC 回收器:
+	串行化回收serial collector:
+	特点:回收时会暂停应用.
+	young区域:将Eden和某个Survivor区域中的存活的对象复制到另一个Survivor区域(设为TO)(大对象直接放到old区域).如果TO区域满了,则直接复制到old区域.
+	old区域:使用mark-sweep-compact GC算法,也就是先标记存活对象,然后清除废弃对象,然后把存活对象都移到一块区域,空出一片较大的空闲空间.
+	适用范围:大部分客户端的应用都可以使用这种回收算法,这也是HotSpot默认的回收算法.在现在的机器(06年)上一个64MB的区域的一次完全回收所需的时间不到半秒钟.
+
+并行标记清除回收Concurrent Mark Sweep collector:
+	young区域:同并行回收.
+	old区域:分为几个步骤.
+	Initialmark:在需要执行GC时,先暂停应用,然后把所有直接引用到的对象进行标记.
+	Concurrentmark:然后继续应用,并同时对已标记对象进行检查,得到所有存活的对象.
+	remark:再次暂停应用,对Concurrent mark持续期间应用程序修改了的对象进行检查(新增的,废弃的),并标记存活对象.这个阶段持续时间较长,因此会使用多线程.在阶段结束后,所有的存活对象都被标记了,未标记的对象就是垃圾对象了.
+	sweep:停止暂停应用程序,然后把所有垃圾对象的空间释放.
+
+与其他算法的不同点:
+	第一:不执行压缩.不过会通过计算将来可能的内存需求而合并/分割某些内存块.
+	第二:不是old区域要满了才执行GC,而是在空间小于一定程度时开始.
+	第三:由于没执行压缩,因此会产生碎片.
+
+	另外,CMS还可以使用增量运行方式,就是在Concurrentmark阶段只执行一部分工作,然后把资源还给应用程序.回收器的工作会分为几个部分并安排在两次young区域的回收空闲阶段完成.这种模式一般用在对暂停时间有要求,同时处理器数目不多的情况下(单核或双核).
+	总体说来,与并行回收相比,CMS降低了old GC的暂停时间(有时候效果很显著),轻微的加长了young GC的时间(因为对象从young区域转到old区域时间会加长:没执行压缩,因此要先找到合适的区域),降低了整个系统的一些执行效率,以及很大的加强了对于内存空间的需求.
+
+一些Java编程的建议
+	根据GC的工作原理，我们可以通过一些技巧和方式，让GC运行更加有效率，更加符合应用程序的要求。一些关于程序设计的几点建议：
+
+	1.最基本的建议就是尽早释放无用对象的引用。大多数程序员在使用临时变量的时候，都是让引用变量在退出活动域（scope）后，自动设置为 null.我们在使用这种方式时候，必须特别注意一些复杂的对象图，例如数组，队列，树，图等，这些对象之间有相互引用关系较为复杂。对于这类对象，GC 回收它们一般效率较低。如果程序允许，尽早将不用的引用对象赋为null.这样可以加速GC的工作。
+
+	2.尽量少用finalize函数。finalize函数是Java提供给程序员一个释放对象或资源的机会。但是，它会加大GC的工作量，因此尽量少采用finalize方式回收资源。
+
+	3.如果需要使用经常使用的图片，可以使用soft应用类型。它可以尽可能将图片保存在内存中，供程序调用，而不引起OutOfMemory.
+
+	4.注意集合数据类型，包括数组，树，图，链表等数据结构，这些数据结构对GC来说，回收更为复杂。另外，注意一些全局的变量，以及一些静态变量。这些变量往往容易引起悬挂对象（dangling reference），造成内存浪费。
+
+	5.当程序有一定的等待时间，程序员可以手动执行System.gc（），通知GC运行，但是Java语言规范并不保证GC一定会执行。使用增量式GC可以缩短Java程序的暂停时间。
+
+
+</pre>
+								</li>
+							</ul>
+						</div>
+		            </div>
+		        </div>
+			</div>
+		</section>
+	<div class="footer_div">
+		<iframe align="center" width="1024px;"  height="350px;" src="../footer.html"  frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+	</div>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="../js/swiper-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/global.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

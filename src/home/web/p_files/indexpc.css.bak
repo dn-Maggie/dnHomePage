@@ -1,0 +1,185 @@
+*{margin: 0px;padding: 0px;}
+body{padding:0px;margin: 0px;font-family: "΢���ź�"}
+a::hover{text-decoration: none;}
+ul
+{
+    list-style: none;
+}
+
+
+
+#main{
+    width:100%;
+    background: #192233;
+}
+#main h2
+{
+    color: #20bdb5;
+    background: #192233;
+    text-align: center;
+}
+#main h2 span
+{
+    border-bottom:  2px solid #20bdb5;
+    display: inline-block;
+}
+#main .imgs
+{
+    text-align: center;
+    margin-top: 15px;
+    position: relative;
+    top: 15px;
+
+}
+#main .line
+{
+    border: 2px solid #20bdb5;
+    padding: 2.5em 1.3em ;
+    width: 860px;
+    margin: 0 auto;
+}
+#main p
+{
+    text-indent: 2em;
+    color: #20bdb5;
+    line-height: 28px;
+    font-size: 18px;
+
+}
+#main p span
+{
+    color: #efed40;
+}
+#main .jt
+{
+    margin-top: 28px;
+}
+#main .jt_img
+{
+    margin-bottom: 25px;
+}
+#main .jt .jt_content
+{
+    background: #ffffff;
+    padding: 1.3em 1.8em ;
+}
+#main .jt ul li
+{
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 35px;
+}
+#main .jt ul .l
+{
+    position: relative;
+    top: -34px;
+}
+#main .jt ul li a
+{
+    color: #000000;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+#main .jt ul li a figcaption
+{
+    text-align: center;
+}
+#main .jt ul li a:hover
+{
+    text-decoration: none;
+}
+#main .jt .jt_bottom_font
+{
+    margin-top: 35px;
+    margin-left: 35px;
+}
+#main .jt .jt_bottom_font p
+{
+    color: #23ffef;
+    font-family: "Menlo";
+    letter-spacing: 3px;
+    line-height: 35px;
+    font-size: 20px;
+}
+#main .lookT
+{
+    margin-top: 28px;
+}
+
+#main .lookT .lookT_img
+{
+    margin-bottom: 25px;
+}
+#main .t_jt ul li
+{
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 8px;
+}
+#main .sm
+{
+    margin-top: 28px;
+}
+
+#main .sm_img
+{
+    margin-bottom: 25px;
+}
+#main .sm .sweep
+{
+    /*width: 700px;*/
+    margin: 35px auto;
+
+}
+#main .sm .sweep .sweep_m
+{
+    /*display: inline-block;*/
+}
+#main .sm .sweep .sweep_p
+{
+    display: inline-block;
+    margin-left: 15px;
+}
+#main .sm .sweep .sweep_p h3
+{
+    letter-spacing: 3px;
+    color: #23ffef;
+}
+#main .sm .sweep .sweep_p h2
+{
+    letter-spacing: 3px;
+    color: #23ffef;
+}
+#main .sm .sweep .sweep_p p:last-child
+{
+    font-size: 25px;
+}
+.cc
+{
+    position: fixed;
+}
+#left
+{height: 322px;
+width: 222px;
+background: white;
+    top: 30%;
+    left: 0px;
+}
+#right
+{height: 322px;
+width: 222px;
+background: white;
+    top: 30%;
+    right: 0px;
+}
+.cc p{
+	margin-top:10px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+
+}
+
