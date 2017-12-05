@@ -21,7 +21,7 @@ $(".mask_tm").hover(function () {
 $(".technique_articles #atrical").hover(function () {
     var _href = $(this).attr('href');
     var _for = $(this).attr('for');
-    var _src = "./img/homePage/articalsimg/"+_for+".jpg";
+    var _src = "./img/homePage/articalsimg/"+_for+".png";
     var el_src = document.getElementById('atrical_img');
     el_src.src = _src;
     var el_href = document.getElementById('atrical_img_a');
