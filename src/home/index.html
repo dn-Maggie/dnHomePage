@@ -17,10 +17,7 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/homePage.js"></script>
-<script src="js/PVstatistics.js"></script>
+
 <a name="top" id="top"></a>
 <iframe align="center" width="1200px;"  height="70px;" src="header.html"  frameborder="no" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 <!--顶部菜单栏和轮播图开始-->
@@ -31,10 +28,10 @@
                 <span class="tm_le" >Android开发</span>
                 <span class="tm_ri" >></span>
             </li>
-            <li class="tm_li" for="#atm_item_2">
+            <!--<li class="tm_li" for="#atm_item_2">
                 <span class="tm_le" >前端入门</span>
                 <span class="tm_ri" >></span>
-            </li>
+            </li>-->
             <li class="tm_li" for="#atm_item_3">
                 <span class="tm_le" >前端架构课程</span>
                 <span class="tm_ri" >></span>
@@ -69,12 +66,13 @@
             <li><a href="https://ke.qq.com/course/211733" target="_blank"><img src="./img/homePage/menu/android/04.png"></a></li>
             <li><a href="https://ke.qq.com/course/223263" target="_blank"><img src="./img/homePage/menu/android/05.png"></a></li>
         </ul>
-        <ul id="atm_item_2" class="atm_item" style="display: none">
+        <!--<ul id="atm_item_2" class="atm_item" style="display: none">
             <li><a href="https://ke.qq.com/course/247799" target="_blank"><img src="./img/homePage/menu/qianduan/01.png"></a></li>
-        </ul>
+        </ul>-->
         <ul id="atm_item_3" class="atm_item" style="display: none">
             <li><a href="https://ke.qq.com/course/130952" target="_blank"><img src="./img/homePage/menu/qdjg/01.png"></a></li>
             <li><a href="https://ke.qq.com/course/145929" target="_blank"><img src="./img/homePage/menu/qdjg/02.png"></a></li>
+            <li><a href="https://ke.qq.com/course/259231" target="_blank"><img src="./img/homePage/menu/qdjg/03.png"></a></li>
         </ul>
         <ul id="atm_item_4" class="atm_item" style="display: none">
             <li><a href="https://ke.qq.com/course/131889" target="_blank"><img src="./img/homePage/menu/JAVA/01.png"></a></li>
@@ -196,7 +194,13 @@
         </div>
         <div class="video">
             <div class="video_display">
-                <div id="id_video_container_4564972818479696195" style="width:100%;height:600px;"></div><script src="https://qzonestyle.gtimg.cn/open/qcloud/video/h5/h5connect.js" charset="utf-8"></script> <script type="text/javascript"> (function(){ var option ={"auto_play":"0","file_id":"4564972818479696195","app_id":"1255515816","width":593,"height":405,"https":1}; /*调用播放器进行播放*/ new qcVideo.Player( /*代码中的id_video_container将会作为播放器放置的容器使用,可自行替换*/ "id_video_container_4564972818479696195", option ); })() </script>
+                <div id="id_video_container_4564972818554817585" style="width:100%;height:540px;"></div>
+                <script src="https://qzonestyle.gtimg.cn/open/qcloud/video/h5/h5connect.js" charset="utf-8"></script>
+                <script type="text/javascript">
+                (function(){
+                var option ={"auto_play":"1","file_id":"4564972818554817585","app_id":"1255515816","width":960,"height":540,"https":1}; /*调用播放器进行播放*/
+                new qcVideo.Player( /*代码中的id_video_container将会作为播放器放置的容器使用,可自行替换*/ "id_video_container_4564972818554817585", option ); })()
+                </script>
             </div>
         </div>
     </div>
@@ -1184,7 +1188,7 @@
     </div>
     <div class="o_e">
         <div class="o_e_img_box">
-            <ul style="width: 2370px;height: 227px;">
+            <ul style="height: 227px;">
                 <li><img src="./img/homePage/envi/1.jpg"></li>
                 <li><img src="./img/homePage/envi/2.jpg"></li>
                 <li><img src="./img/homePage/envi/3.jpg"></li>
@@ -1257,5 +1261,18 @@
         </ul>
     </div>
 </div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/homePage.js"></script>
+<script src="js/PVstatistics.js"></script>
+<script>
+    $(function(){
+    /*底部办公环境图片滚动*/
+    $(".o_e_img_box").kxbdMarquee();
+    /*讲师团队图片滚动*/
+    $(".picbox").kxbdMarquee();
+})
+
+</script>
 </body>
 </html>

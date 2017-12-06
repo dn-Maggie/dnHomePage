@@ -1202,8 +1202,13 @@ body,ul,li{
     overflow:hidden;
 }
 .o_e_img_box ul li{
+    width:237px;
     float: left;
     padding: 0 5px;
+}
+.o_e_img_box img{
+    width:227px;
+    height:227px
 }
 /*办公环境CSS结束*/
 /*底部企业合作CSS开始*/

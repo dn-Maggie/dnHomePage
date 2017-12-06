@@ -27,10 +27,8 @@ $(".technique_articles #atrical").hover(function () {
     var el_href = document.getElementById('atrical_img_a');
     el_href.href = _href;
     });
-/*讲师团队图片滚动*/
-$(".picbox").kxbdMarquee();
-/*底部办公环境图片滚动*/
-$(".o_e_img_box").kxbdMarquee();
+
+
 /*顶部菜单栏hover效果js结束*/
 /*优秀学员展示轮播图jS开始*/
      var _index=0;
