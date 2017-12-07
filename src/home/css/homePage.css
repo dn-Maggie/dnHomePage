@@ -567,7 +567,7 @@ body,ul,li{
     height: 30px;
     width: 1200px;
     text-align: left;
-    margin: 0px auto 17px auto;
+    margin: 0px auto 0px auto;
 }
 .student_show .headings #one{
     font-family: "Microsoft YaHei" ;
@@ -589,7 +589,7 @@ body,ul,li{
 }
 .wrap_scroll{
     width:1200px;
-    height:542px;
+    height:512px;
     position:relative;
     margin:22px auto auto auto;
 }
@@ -1153,7 +1153,7 @@ body,ul,li{
 /*技术交流与学院动态CSS结束*/
 /*学员心声CSS开始*/
 .student_voice{
-    margin:65px auto 30px auto;
+    margin:0px auto 30px auto;
     width:1200px;
     height:554px;
 }
