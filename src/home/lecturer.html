@@ -10,18 +10,766 @@
 		<link rel="stylesheet" type="text/css" href="css/global.css"/>
 		<link rel="stylesheet" type="text/css" href="css/basicCSS.css"/>
 		<link rel="stylesheet" type="text/css" href="css/headerFooterCSS.css"/>
+		
+		<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/lecturer.css" />
+		<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
 	</head>
-	<body>
-		<div class="header_div">
-			<iframe align="center" width="1200px;"  height="70px;" src="header.html"  frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-		</div>
+	<body class="body">
 		<div class="top_bagm">
-
+			<div id="myCarousel" class="carousel slide">
+				<!-- 轮播（Carousel）指标 -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<!--<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>-->
+				</ol>   
+				<!-- 轮播（Carousel）项目 -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="img/lecture/ban.jpg" alt="First slide">
+						<!--<div class="carousel-caption">标题 1</div>-->
+					</div>
+					<!--<div class="item">
+						<img src="img/lecture/ban.jpg" alt="Second slide">
+						<div class="carousel-caption">标题 2</div>
+					</div>
+					<div class="item">
+						<img src="img/lecture/ban.jpg" alt="Third slide">
+						<div class="carousel-caption">标题 3</div>
+					</div>-->
+				</div>
+				<!-- 轮播（Carousel）导航 -->
+				<a class="carousel-control left" href="#myCarousel" 
+				   data-slide="prev"></a>
+				<a class="carousel-control right" href="#myCarousel" 
+				   data-slide="next"></a>
+			</div> 
+		</div>
+		
+		
+		
+		<div class="center_content contain">
+			<div class="bs-lecture-nav">
+			    <ul id="lectureTabs" class="nav nav-tabs" role="tablist">
+			      <li role="presentation" class="active"><a href="#Java" id="Java-tab" role="tab" data-toggle="tab" aria-controls="Java" aria-expanded="true">Java高级</a></li>
+			      <li role="presentation" class=""><a href="#Javascript" role="tab" id="Javascript-tab" data-toggle="tab" aria-controls="Javascript" aria-expanded="false">Web前端</a></li>
+			      <li role="presentation" class=""><a href="#Cpp" role="tab" id="Cpp-tab" data-toggle="tab" aria-controls="Cpp" aria-expanded="false">C++</a></li>
+			      <li role="presentation" class=""><a href="#Python" role="tab" id="Python-tab" data-toggle="tab" aria-controls="Python" aria-expanded="false">Python</a></li>
+			      <li role="presentation" class=""><a href="#Android" role="tab" id="Android-tab" data-toggle="tab" aria-controls="Android" aria-expanded="false">Android高级</a></li>
+			      <li role="presentation" class=""><a href="#Test" role="tab" id="Test-tab" data-toggle="tab" aria-controls="Test" aria-expanded="false">软件测试</a></li>
+			    </ul>
+			    <div id="lectureTabsContent" class="tab-content">
+			      <div role="tabpanel" class="tab-pane fade active in" id="Java" aria-labelledby="Java-tab">
+			       	<ul class="lectur_list row">
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('//10.url.cn/eth/ajNVdqHZLLA7aX4mxLutWqGTHBtWoCibfibIZsVu7kfsg9qN0ogjwXfaSVl9xvqrqnM4opVCsE0b8/?tp=webp')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>Luffy<small>（高级讲师）</small></h1>
+									<p>从事JAVA相关开发近十年，曾在京东，陆金所，号百信息等上市公司担任高级工程师。自工作以来参与过多个大型Java项目的分析、设计、开发、管理等工作。帮助学生由浅入深的掌握知识， 寓教于乐 ，善于调动课堂氛围，幽默风趣，让学生轻松乐学。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程5</span>
+								</div>
+							</div>
+						</li>
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('//10.url.cn/eth/ajNVdqHZLLDOpDN7c8IlfPgJt5s65sWs2VH7BdrdxR4siaicZXC3d14yGhdtNTiag0ZK14aDdrRyDI/?tp=webp')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>Tony<small>（高级讲师）</small></h1>
+									<p>丰富的JavaEE相关的开发经验，曾任亿迅、携程、 韵达等知名上市公司、一线互联网企业应用架构师、项目经理等职务，在高并发、大数据、微服务架构上有丰富的经验。 现投身在线教育行业，期望为中国信息化尽绵薄之力。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程3</span>
+								</div>
+							</div>
+						</li>
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('./img/homePage/sean.jpg')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>Sean<small>（高级讲师）</small></h1>
+									<p>毕业于西安电子科技大学，曾任职于中国电信的上市子公司号百控股担任项目经理，超过十年java开发经验，具备多个行业项目产品开发经验，精通java，熟练掌握jquery等主流开发技术，熟悉mysql、oracle等主流数据库及调优。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程7</span>
+								</div>
+							</div>
+						</li>
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('//10.url.cn/eth/ajNVdqHZLLBcSJ2pmXjNIfvqU5OkKkmhlvhibEdxwV1l04QYl6PWGA6r6ejylXULeZ3qxzwjP0TM/?tp=webp')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>Five<small>（高级讲师）</small></h1>
+									<p>曾任职于中国电信、当当网等大型互联网公司，从事多年的Web开发、管理及培训的相关工作。精通JAVA，深入理解网络编程、微服务架构、分布式技术等。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程5</span>
+								</div>
+							</div>
+						</li>
+					</ul>
+					
+					<ul class="lectur_list row">
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('./img/homePage/lison.jpg')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>Lison<small>（高级讲师）</small></h1>
+									<p>复旦大学工程硕士，专注技术十年，产品控、代码控，拥有丰富的项目经验，主持研发了多个成功上线的大型互联网项目。精通JAVA、J2EE和前端开发，擅长互联网高并发、高可靠架构设计。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程4</span>
+								</div>
+							</div>
+						</li>
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('./img/homePage/James.jpg')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>James<small>（高级讲师）</small></h1>
+									<p>硕士研究生，十余年Java行业经验。 曾就职于携程、人人网等一线互联网公司。专注于java领域，精通软件架构设计，对于高并发、高性能服务有深刻的见解 ,在服务化基础架构和微服务技术有大量的设计和建设经验。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程4</span>
+								</div>
+							</div>
+						</li>
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('./img/homePage/Mark.jpg')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>Mark<small>（高级讲师）</small></h1>
+									<p>先后在金蝶、华为、58等公司担任技术经理、架构师等高T级别，带领团队主持和主导了许多电信后台项目和互联网项目。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程5</span>
+								</div>
+							</div>
+						</li>
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('//10.url.cn/eth/ajNVdqHZLLBibwzUHKlmcKw38mNgwIUtUw2AVh7FDjXumZicOuczEOWmbYUibNSMuzrruAdx7yczB4/?tp=webp')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>净地<small>（高级讲师）</small></h1>
+									<p>曾就职珍爱网、嘉实基金，目前任职于腾讯公司，从事互联网分布式系统开发，具备多年相关行业开发经验，熟练分布式系统、设计模式、Linux、NoSQL、服务治理、自动化运维、高可用高并发技术架构等。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程1</span>
+								</div>
+							</div>
+						</li>
+					</ul>
+					
+			      </div>
+			      <div role="tabpanel" class="tab-pane fade" id="Javascript" aria-labelledby="Javascript-tab">
+			      	<ul class="lectur_list row">
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('//q3.qlogo.cn/g?b=qq&k=ich4pjzTVVr1g6V8MiakToZA&s=140&t=1462198902&tp=webp')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>Star<small>（高级讲师）</small></h1>
+									<p>曾任职于阿里巴巴、高伟达、亚信上市公司，十年行业经验、前后台大型项目架构经验；精通java web、android、javascript、html5、actionscript等开发语言，独爱前端和nodeJs生态平台。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程15</span>
+								</div>
+							</div>
+						</li>
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('./img/homePage/max.jpg')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>Max<small>（高级讲师）</small></h1>
+									<p>前端开发工作八年，曾任职拓维信息从事云校园，作业班客户端开发与架构开发，后任职阿里淘宝负责mobile web技术方向，目前动脑前端学院前端高级讲师从事前端教研工作。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程11</span>
+								</div>
+							</div>
+						</li>
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('//q4.qlogo.cn/g?b=qq&k=TmJE4ny4wX2CVpOTnaNYjQ&s=640&t=1473603805&tp=webp')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>Ryan<small>（高级讲师）</small></h1>
+									<p>多年前端开发管理经验，曾就职于拓尔思、三七游戏等互联网上市公司，担任项目经理及前端组长。参与研发了海尔家电全球网站群、海尔论坛、海贝商城、三七手游官网平台、三七手游运营平台等大型网站及后台开发。现为动脑学院前端高级讲师。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程9</span>
+								</div>
+							</div>
+						</li>
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('./img/homePage/Derry.jpg')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>Derry<small>（高级讲师）</small></h1>
+									<p>曾就职于东华软件等多家上市公司参与企业运维产品的云平台研发，长期耕耘于前端、安卓原生、以及移动混合APP领域，对企业运维业务有着深刻的认识见解以及研究所得，解决大量国企事业单位资产管理以及移动运维管理难题，紧跟前端技术发展前沿，奋斗于write once run everywhere的开发前线。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程5</span>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="lectur_list row">
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('./img/homePage/song.jpg')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>Song<small>（高级讲师）</small></h1>
+									<p>曾就职于携程参与过旅游行业线上线下一体化的多个平台级项目，服务于游客线上买票到景区验票；丰富的前后端编程经验，对软硬件都有研究所得，钟情于全栈JS，精通nodejs，vuejs，requirejs，紧跟前端发展步伐。 志向：做知识的传播者，成为大前端的传教士。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程9</span>
+								</div>
+							</div>
+						</li>
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('./img/homePage/think.jpg')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>Think<small>（高级讲师）</small></h1>
+									<p>全栈工程师，近8年前端开发经验，曾任用友软件前端经理，熟悉各个主流框架底层原理以及设计模式，精通三端开发，对项目开发具有非常高的前瞻性。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程11</span>
+								</div>
+							</div>
+						</li>
+					</ul>
+			      </div>
+			      <div role="tabpanel" class="tab-pane fade" id="Cpp" aria-labelledby="Cpp-tab">
+			     	<ul class="lectur_list row">
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('./img/homePage/Lee.jpg')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>Lee<small>（高级讲师）</small></h1>
+									<p>Lee曾供职于华为和诺基亚通信长达7年时间，曾在某上市公司担任产品总监。 10年（C/C++）开发经验和产品管理经验，研究过过多款C/C++优秀开源软件的框架，开发过大型音频广播云平台，深入理解需求分析、架构分析和产品管理，精通敏捷开发流程和项目管理。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程3</span>
+								</div>
+							</div>
+						</li>
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('./img/homePage/martin.jpg')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>Martin<small>（高级讲师）</small></h1>
+									<p>网易企业邮局的架构师，老板邮局的首席架构师，曾任职于多家上市公司。十二年行业（C/C++）开发经验，一直在知名企业专注于Linux服务器端高并发应用程序和分布式大数据存储系统的开发和架构。了解和研究过多款C/C++优秀开源软件（Nginx,TFS等）的框架和代码实现，擅长在其基础上进行二次开发。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程3</span>
+								</div>
+							</div>
+						</li>
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('./img/homePage/King.jpg')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>King<small>（高级讲师）</small></h1>
+									<p>曾供职于微软亚洲研究院，创维集团深圳研究院。后任知名创业公司系统架构师，负责数据传输协议设计和集群架构设计。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程5</span>
+								</div>
+							</div>
+						</li>
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('//10.url.cn/eth/ajNVdqHZLLClSLRXfYdHgPE7kJS0bgXYyBWgk8uMib4XmUcBGB5fYaRX2BPDCSg5CicpxibWtKy8E8/?tp=webp')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>Jason<small>（高级讲师）</small></h1>
+									<p>行业经验丰富，曾担任华为移动事业部项目经理，央视网移动互联网创意大赛明星导师。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程9</span>
+								</div>
+							</div>
+						</li>
+					</ul>
+			      </div>
+			       <div role="tabpanel" class="tab-pane fade" id="Python" aria-labelledby="Python-tab">
+					<ul class="lectur_list row">
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('//10.url.cn/eth/ajNVdqHZLLBr80zL7tdZ6iaNNV4JgtC9f05BegMAwUOWSK25ggERsicAJTEicyD44luA8TgrRfcOaE/?tp=webp')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>Nemo<small>（高级讲师）</small></h1>
+									<p>欧盟Erasmus项目/中国海洋大学双硕士。 化学/工程狗→物理/计算机狗 曾参与瑞典Munskjo公司大数据二项判别项目，芬兰Specim公司木材含水检测项目，西班牙Granada皇宫皇家画作无损检测，以及NASA火星探测计划传感器项目子项目。 主修方向高光谱，辅修机器学习/图像处理。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程2</span>
+								</div>
+							</div>
+						</li>
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('./img/homePage/Gavin.jpg')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>Gavin<small>（高级讲师）</small></h1>
+									<p>5年python开发经验，曾就职于饿了么等一线互联网企业，在多家互联网公司先后从事Web开发、运维部署、自动化测试等python相关工作，有分布式、高并发的实战经验，喜欢Python的优雅和便捷，擅长Web开发，热爱知识分享。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程3</span>
+								</div>
+							</div>
+						</li>
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('//10.url.cn/eth/ajNVdqHZLLBKEWmLq72icfJAiaqlneqL0uLrcia4kys2TGjBfDAO65XN7avzqWicicBtibFuibPc9kEAf8/?tp=webp')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>Eric<small>（高级讲师）</small></h1>
+									<p>毕业于华中科技大学计算机专业，拥有多年python企业开发经验，精通Linux下Python web开发、数据采集解析、数据分析及可视化，曾就职于上海爱数信息技术股份有限公司,在云产品部门从事云管平台、灾备运维系统等系统开发。 擅长开源库、框架，热衷分享，致力于在最短的时间里帮助你掌握更多python知识和实用技术。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程3</span>
+								</div>
+							</div>
+						</li>
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('//q1.qlogo.cn/g?b=qq&k=M8oybO9Bmv5ibTygic91PRZw&s=640&t=1502435035&tp=webp')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>John<small>（高级讲师）</small></h1>
+									<p>前百度高级机器学习工程师，毕业于华中科技大学，硕士保送中科院计算所,主要研究数据挖掘与机器学习方向，参与大型机器学习实战项目、智能推理与诊断系统，曾获中科院计算所所长优秀奖，目前担任动脑学院python机器学习高级讲师。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程5</span>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="lectur_list row">
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('./img/homePage/ben.jpg')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>Ben<small>（高级讲师）</small></h1>
+									<p>毕业于中南民族大学计算机专业，从事Android，python企业开发技术6年，曾在某创业型公司担任项目负责人，对python兴趣浓厚，多年来对python学习与追求也从未停止过。人生苦短，我用python，攀登python的高峰，其乐无穷，那你呢? 你做好了准备了吗?</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程3</span>
+								</div>
+							</div>
+						</li>
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('//q1.qlogo.cn/g?b=qq&k=aIhSVdDrKKrffs5wfx6AQQ&s=140&t=1493795309&tp=webp')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>Cici<small>（高级讲师）</small></h1>
+									<p>曾就职于搜狐畅游、搜狗等一线互联网公司从事Linux系统运维和Python开发工作，12年开始从事Python开发，超过5年运维、开发经验，了解最新行业讯息，致力于构建高效运维生态，解放双手，共享美好生活。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程3</span>
+								</div>
+							</div>
+						</li>
+					</ul>
+					
+			       </div>
+			        <div role="tabpanel" class="tab-pane fade" id="Android" aria-labelledby="Android-tab">
+					<ul class="lectur_list row">
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('./img/homePage/Ricky.jpg')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>Ricky<small>（高级讲师）</small></h1>
+									<p>8年开发管理经验，具有丰富的教学经验，曾供职于华为、网易、联信永益担任项目经理，及知名线下和线上培训机构教学总监。参与研发华为手机定制系统、万达视频监控、PICC勘察定损、ERP移动办公等大型系统客户端和后台开发。现为动脑学院安卓金牌讲师。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程15</span>
+								</div>
+							</div>
+						</li>
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('./img/homePage/David.jpg')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>David<small>（高级讲师）</small></h1>
+									<p>曾在华为物联网事业部担任技术总监一职，从事电视机顶盒开发和智能家居研发，具备多年的大型项目开发经验。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程2</span>
+								</div>
+							</div>
+						</li>
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('./img/homePage/jason.jpg')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>Jason<small>（高级讲师）</small></h1>
+									<p>行业经验丰富，曾担任华为移动事业部项目经理，央视网移动互联网创意大赛明星导师。与其诅咒黑暗，不如点亮灯火；在成为高手的旅途中，你或许没有勇气或许没有耐心；但是，你有我；我就是我，带给你希望的光火；我是宁金林Jason。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程9</span>
+								</div>
+							</div>
+						</li>
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('//10.url.cn/eth/ajNVdqHZLLCOzAUOvqbwOulvxHHTAcEnPVkA1d3NGIjw1TaLwwFteC8jx1NKLnKHvg0BPOAQjpk/?tp=webp')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>Lance<small>（高级讲师）</small></h1>
+									<p>曾经就职于上海心动网络使用cocos2dx的c++支持进行手机游戏客户端的开发，期间还接触了基于object-c以及lua对ios的开发。后就职搜狐。擅长Android、C、C++开发，从事安卓开发5年。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程6</span>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="lectur_list row">
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('./img/homePage/Alvin.jpg')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>Alvin<small>（高级讲师）</small></h1>
+									<p>曾就职于三星集团手机软件研发部门和小米旗下国内知名互联网金融公司，在android 领域深耕多年。担任过多年三星手机软件研发项目经理。对 android，java，C 都有丰富的开发经验。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程15</span>
+								</div>
+							</div>
+						</li>
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('//10.url.cn/eth/ajNVdqHZLLBS8IgbvYWsZvzURia3zw0mUZRmxDvQJClvgSqkYJCEvQiaZDfAdlSGquuyOV60gkNs4/')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>Jett<small>（高级讲师）</small></h1>
+									<p>曾任东芝硬件工程师，东方集团软件工程师，有15年项目开发经验，熟悉汇编,java,c/c++开发语言，对系统底层，web开发和移动端开发有较深入研究。主要涉及应用层msi项目和各种嵌入式设备软件（手机，平板,交换机，复合机等）。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程2</span>
+								</div>
+							</div>
+						</li>
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('//10.url.cn/eth/ajNVdqHZLLDkEcdVkib9ib4qATZsaLm4GVRWMUe3otSibyHkzkLMPIkQyQFEDfCeUQnogegLpbTibsA/')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>Joker<small>（高级讲师）</small></h1>
+									<p>曾就职于新媒传信和暴走漫画从事android开发。多年安卓开发经验，主要涉及应用层和SDK的开发.对项目结构框架的搭建和代码优化的自己独到的见解。熟悉java/golang/html5/css 等语言。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程9</span>
+								</div>
+							</div>
+						</li>
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('//q3.qlogo.cn/g?b=qq&k=WzCiako7AqqbEYxbswmlf6g&s=640&t=1493102522')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>Tim<small>（高级讲师）</small></h1>
+									<p>曾任爱奇艺高级Android工程师，多年跨平台开发经验，主要涉及的项目有多屏互动开发，coco2dx渲染优化等，擅长性能调优与NDK开发，熟悉java/c++/objective-c/swift。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程6</span>
+								</div>
+							</div>
+						</li>
+					</ul>
+			       </div>
+		        	<div role="tabpanel" class="tab-pane fade" id="Test" aria-labelledby="Test-tab">
+		        		<ul class="lectur_list row">
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('//q1.qlogo.cn/g?b=qq&k=41XrIX31szibYU9OCDhLgAQ&s=640&t=1493273065&tp=webp')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>Jerry<small>（高级讲师）</small></h1>
+									<p>湖南大学信息管理专业毕业，10年软件测试从业经验。曾供职于世界500强企业，性能测试专家,多年软件培训教育经验。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程2</span>
+								</div>
+							</div>
+						</li>
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('//10.url.cn/eth/ajNVdqHZLLBnjgEM8ylQHERI0BdVUFzzneAZAibia2YzKTpheZDc38FsL69L6aNic00op3FlCmbicG8/?tp=webp')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>perlly<small>（高级讲师）</small></h1>
+									<p>中南大学软件工程学院毕业。迅雷高级测试工程师，5年测试经验，精通软件开发和测试、有全面的项目经验和丰富的项目测试和项目管理经验。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程3</span>
+								</div>
+							</div>
+						</li>
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('./img/homePage/roy.jpg')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>Roy<small>（高级讲师）</small></h1>
+									<p>毕业于电子科技大学，曾任职于诺基亚与华为合资子公司，负责过多个项目的功能和自动化测试及测试管理工作，熟悉功能测试、自动化测试和Linux端项目测试。。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程3</span>
+								</div>
+							</div>
+						</li>
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('//q4.qlogo.cn/g?b=qq&k=L2C1wPlGlY6yQnXe0kJdgQ&s=640&t=1479786964&tp=webp')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>Kitty<small>（高级讲师）</small></h1>
+									<p>从事软件测试工作5年以上工作经验，就业于美资与国内知名公司担任过高级测试、测试组长、测试管理者等职务，善长测试技能：功能测试、功能自动化测试、性能测试、接口测试、数据库测试等，具备丰富的ERP行业、零售业、国内外电商平台业务流程测试经验。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程1</span>
+								</div>
+							</div>
+						</li>
+						
+					</ul>
+					<ul class="lectur_list row">
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('./img/homePage/carvin.jpg')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>Carvin<small>（高级讲师）</small></h1>
+									<p>七年软件测试从业经验，负责过多个大型项目的功能、性能测试工作，具有多年的测试部门管理经验，熟悉PC端、移动端项目测试。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程2</span>
+								</div>
+							</div>
+						</li>
+						<!--<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('//10.url.cn/eth/ajNVdqHZLLAYIeII1OwicP5lQfOhJomgQMLtrJfoCeT0Jne9ib8UQaFUnHbEsjtDH2EzrjAHNkZvI/')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>Maggie<small>（高级讲师）</small></h1>
+									<p>从事多年JavaWeb项目开发，丰富的JavaEE相关的开发经验，参与多个大型政府网站项目设计，负责Java项目的分析、设计、开发、管理等工作。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程3</span>
+								</div>
+							</div>
+						</li>
+						<li class="lectur col-md-3">
+							<div class="lectur_box">
+								<div class="lectur_box_img">
+								    <div class="lectur_box_img_2">
+								        <div class="lectur_box_img_3" style="background:url('//10.url.cn/eth/ajNVdqHZLLDBO1omEDmUIaDSKy9ExFfwkgCvDKqiaXlUCcqsVbyMic3pO2q4lsEGbXBOsMzicXGxBI/?tp=webp')"></div>
+								    </div>
+								</div>
+								<div class="lectur_box_desc">
+									<h1>Danny<small>（高级讲师）</small></h1>
+									<p>北航软件工程硕士，6年安卓开发经验，3年安卓讲师经验，曾任职联想，从事联想乐phone手机系统相机与系统通讯录开发,艺龙酒店客户端开发与架构，高校电子商务平台在校生客户端与服务端研发，目前为动脑学院安卓讲师。</p>
+								</div>
+								<div class="lectur_box_evaluate">
+									<span>评分0.5</span>
+									<span>课程6</span>
+								</div>
+							</div>
+						</li>-->
+					</ul>
+			       </div>
+			    </div>
+	  		</div>
 		</div>
 		
 		<div class="footer_div">
 			<iframe align="center" width="100%;"  height="350px;" src="footer.html"  frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 		</div>
+		
 	</body>
 </html>

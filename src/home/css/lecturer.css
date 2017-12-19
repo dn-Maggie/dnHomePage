@@ -1,4 +1,162 @@
 @charset "utf-8";
+.body{
+	background: rgb(235,235,235);
+}
 .top_bagm{
+	/* height: 530px; */
+	position: relative;
+	overflow: hidden;
+}
+/*banner*/
+.carousel-indicators li{
+    width: 40px;
+    height: 2px;
+    margin:0;
+    border-radius:0;
+    background-color:rgba(8, 8, 8, 0.28);
+    border:0;
+}
+.carousel-indicators .active{
+    width: 40px;
+    height: 2px;
+    margin: 0;
+    background-color: #fff;
+}
 
+/*标签页重写*/
+/*重写bootstrap 自动出现背景以及边框等css*/
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    border: none; 
+    color:#23b8ff;
+    border-bottom: 4px solid #23b8ff;
+    background: transparent;
+}
+.nav>li>a:focus, .nav>li>a:hover{
+	background-color:transparent;
+	border-color:transparent
+}
+.nav>li>a{
+    padding: 16px 12px;
+    font-size: 20px;
+    color: #666;
+}
+.carousel-indicators li:hover{
+	background-color:#fff;
+}
+
+
+.bs-lecture-nav{
+	text-align: center;
+	    
+}
+.bs-lecture-nav .nav-tabs{
+	display: inline-block;
+}
+
+.center_content{
+	overflow: hidden;
+	width: 1024px;
+	margin: auto;
+}
+.lectur_list{
+	padding-top: 150px;
+}
+.lectur_list .lectur{
+	height: 530px;
+}
+.lectur_list .lectur .lectur_box{
+	position: relative;
+	width: 100%;
+}
+.lectur_box .lectur_box_img{
+	margin: auto;
+	position: absolute;
+	top: -97px;
+	height: 194px;
+	width: 168px;
+	background: #fff;
+	left: 50%;
+	margin-left: -84px;
+}
+
+.lectur_box .lectur_box_desc{
+	background: #fff;
+	height: 434px;
+	padding: 0 30px;
+}
+.lectur_box_desc h1{
+    margin: 0;
+    padding-top: 97px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #666;
+    font-size: 23px;
+    font-family: microsoft yahei;
+}
+.lectur_box_desc h1 small{
+    font-size: 15px;
+}
+.lectur_box_desc p{
+   margin-top: 10px;
+    color: #666;
+    text-align: left;
+    font-size: 15px;
+    font-family: microsoft yahei;
+    line-height: 1.5;
+    text-indent: 20px;
+    max-height: 260px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.lectur_box .lectur_box_evaluate{
+	background: rgb(254,131,2);
+	height: 54px;
+    line-height: 54px;
+}
+.lectur_box_evaluate span{
+    display: inline-block;
+    width: 40%;
+    height: 26px;
+    background: #fff;
+    line-height: 26px;
+    color: #fe8302;
+    font-size: 16px;
+    font-family: 'microsoft yahei';
+    border-radius: 4px;
+}
+.lectur_box_evaluate span:before{
+	content: '★';
+}
+/*六边形*/
+.lectur_box_img, .lectur_box_img_2 ,.lectur_box_img_3{
+    width: 168px;
+    height: 194px;
+    overflow: hidden;
+}
+.lectur_box_img, .lectur_box_img_2{
+    visibility: hidden;
+}
+.lectur_box_img{
+    transform: rotate(120deg);
+    float: left;
+    margin-left: 10px;
+    -ms-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    -webkit-transform: rotate(120deg);
+}
+.lectur_box_img_2{
+    transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+}
+.lectur_box_img_3{
+    transform: rotate(-60deg);
+    background: no-repeat 50% center;
+    background-size: 125% auto;
+    -ms-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+    visibility: visible;
+    background-size: cover!important;
+    background-position: center!important;
 }
